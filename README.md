@@ -1,2 +1,2 @@
-# ArlingtonCL-Group.github.io
-Arlington Computational Linguistics Group (ACLGroup) Offical Page
+# UTA-ACL2.github.io
+Arlington Computational Linguistics Lab (ACL2) Offical Page
