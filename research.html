@@ -116,7 +116,36 @@
                 <div class="row">
                     <div class="twelve columns">
                         <script>
-                            ProjList = [{}]
+                            ProjList = [
+				{
+				web: "https://arxiv.org/abs/2309.13086",
+				title: "Towards Lexical Analysis of Dog Vocalizations via Online Videos",
+				abs: "Deciphering the semantics of animal language has been a grand challenge. This study presents a data-driven investigation into the semantics of dog vocalizations via correlating different sound types with consistent semantics. We first present a new dataset of Shiba Inu sounds, along with contextual information such as location and activity, collected from YouTube with a well-constructed pipeline. The framework is also applicable to other animal species. Based on the analysis of conditioned probability between dog vocalizations and corresponding location and activity, we discover supporting evidence for previous heuristic research on the semantic meaning of various dog sounds. For instance, growls can signify interactions. Furthermore, our study yields new insights that existing word types can be subdivided into finer-grained subtypes and minimal semantic unit for Shiba Inu is word-related. For example, whimper can be subdivided into two types, attention-seeking and discomfort.",
+				link: "https://arxiv.org/pdf/2309.13086",
+				code: "",
+				data: "",
+				cite: "Yufei Wang, Chunhao Zhang, Jieyi Huang, Mengyue Wu, Kenny Zhu. Towards Lexical Analysis of Dog Vocalizations via Online Videos. ArXiv preprint arXiv:2309.13086. 2023."
+				},
+				{
+				web: "https://arxiv.org/abs/2309.13085",
+				title: "Does My Dog''Speak''Like Me? The Acoustic Correlation between Pet Dogs and Their Human Owners",
+				abs: "How hosts language influence their pets' vocalization is an interesting yet underexplored problem. This paper presents a preliminary investigation into the possible correlation between domestic dog vocal expressions and their human host's language environment. We first present a new dataset of Shiba Inu dog vocals from YouTube, which provides 7500 clean sound clips, including their contextual information of these vocals and their owner's speech clips with a carefully-designed data processing pipeline. The contextual information includes the scene category in which the vocal was recorded, the dog's location and activity. With a classification task and prominent factor analysis, we discover significant acoustic differences in the dog vocals from the two language environments. We further identify some acoustic features from dog vocalizations that are potentially correlated to their host language patterns.",
+				link: "https://arxiv.org/abs/2309.13085",
+				code: "https://anonymous.4open.science/r/EJSHIBAVOICE-0DC5",
+				data: "https://anonymous.4open.science/r/EJSHIBAVOICE-0DC5",
+				cite: "Jieyi Huang, Chunhao Zhang, Yufei Wang, Mengyue Wu, Kenny Zhu. ArXiv reprint arXiv:2309.13085. 2023."
+ 
+			},
+				{
+				web: "https://github.com/XSiling/ShibaScript",
+                                title: "Transcribing Vocal Communications of Domestic Shiba lnu Dogs",
+                                abs: "How animals communicate and whether they have languages is a persistent curiosity of human beings. However, the study of animal communications has been largely restricted to data from field recordings or in a controlled environment, which is expensive and limited in scale and variety. In this paper, we take domestic Shiba Inu dogs as an example and extract their vocal communications from a large amount of YouTube videos of Shiba Inu dogs. We classify these clips into different scenarios and locations, and further transcribe the audio into phonetically symbolic scripts through a systematic process. We discover consistent phonetic symbols among their expressions, which indicates that Shiba Inu dogs can have systematic verbal communication patterns. This reusable framework produces the first-of-its-kind Shiba Inu vocal communication dataset that will be valuable to future research in both zoology and linguistics.",
+                                link: "https://aclanthology.org/2023.findings-acl.869/",
+                                code: "https://github.com/XSiling/ShibaScript",
+                                data: "https://github.com/XSiling/ShibaScript",
+                                cite: 'Jieyi Huang, Chunhao Zhang, Mengyue Wu, and Kenny Q. Zhu. 2023. Transcribing Vocal Communications of Domestic Shiba lnu Dogs. In Findings of the Association for Computational Linguistics: ACL 2023, pages 13819–13832.'
+                            },
+]
                             for (i = 0; i < ProjList.length; i++) {
                                 paper = ProjList[i];
                                 document.write('<p>');
