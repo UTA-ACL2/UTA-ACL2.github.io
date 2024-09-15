@@ -10,7 +10,7 @@
         <meta charset="utf-8"/>
         <!-- Set the viewport width to device width for mobile -->
         <meta name="viewport" content="width=device-width"/>
-        <title>ACL LAB in UTA</title>
+        <title>ACL2 Research </title>
         <!-- Included CSS Files (Uncompressed) -->
         <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
@@ -96,76 +96,27 @@
                 <hr>
                 <ul>
                     <li>
-                        <a href="#cr">Commonsense Reasoning</a>
+                        <a href="#al">Animal Language</a>
                     </li>
                     <li>
-                        <a href="#gen">Text Generation</a>
+                        <a href="#mh">NLP for Mental Health</a>
                     </li>
                     <li>
-                        <a href="#dia">Dialogue and Question Answering</a>
+                        <a href="#lw">Light-weight NLP</a>
                     </li>
                     <li>
-                        <a href="#nlp">Information Extraction</a>
-                    </li>
-                    <li>
-                        <a href="#pl">Other NLP</a>
+                        <a href="#pp">Previous Projects</a>
                     </li>
                 </ul>
             </div>
             <div class="nine columns">
                 <div class="panel">
-                    <h4 id="cr">Commonsense Reasoning</h4>
+                    <h4 id="al">Animal Language</h4>
                 </div>
                 <div class="row">
                     <div class="twelve columns">
-                        <!--{ web: "", title: "", abstract: "", link:"", code: "", data: "", cite: ''} -->
                         <script>
-                            ProjList = [{
-                                web: "project_causal.html",
-                                title: "CausalNet: Causality Extraction and Reasoning",
-                                abs: "Causality can help for human reasoning and decision making. We extract casuality(cause-effect pairs) from web corpus and build a web-scale causality network (CausalNet). Backed by this network, we propose a framework for commonsense causal reasoning.",
-                                link: "http://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-copa.pdf",
-                                code: "https://github.com/cs-zyluo/CausalNet",
-                                data: "https://adapt.seiee.sjtu.edu.cn/causal/",
-                                cite: 'Zhiyi Luo, Yuchen Sha, Kenny Q. Zhu, Seung-won Hwang, Zhongyuan Wang, "Commonsense Causal Reasoning between Short Texts", Proc. of 15th Int. Conf. on Principles of Knowledge Representation and Reasonging (KR\'2016), Cape Town, South Africa.'
-                            }]
-                            for (i = 0; i < ProjList.length; i++) {
-                                paper = ProjList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                // document.write('<nobr>')
-                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
-                                // document.write()
-                                // document.write('</nobr>')
-                                // document.write('<button type="button">Show All</button><br>')
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                        <script>
-                            ProjList = [{
-                                web: "https://shanshan437421.github.io/",
-                                title: "Enhanced Story Representation by ConceptNet for Predicting Story Endings",
-                                abs: "Predicting endings for narrative stories is a grand challenge for machine commonsense reasoning. The task requires accurate representation of the story semantics and structured logic knowledge. Pre-trained language models, such as BERT, made progress recently in this task by exploiting spurious statistical patterns in the test dataset, instead of “understanding” the stories per se. In this paper, we propose to improve the representation of stories by first simplifying the sentences to some key concepts and second modeling the latent relationship between the key ideas within the story. Such enhanced sentence representation, when used with pre-trained language models, makes substantial gains in prediction accuracy on the popular Story Cloze Test without utilizing the biased validation data.",
-                                link: "https://github.com/shanshan437421/Simplification/blob/master/paper.pdf",
-                                code: "https://github.com/shanshan437421/Simplification",
-                                data: "",
-                                cite: 'Shanshan Huang, Kenny Q. Zhu*, Qianzi Liao, Libin Shen and Yinggong Zhao. Enhanced Story Representation by ConceptNet for Predicting Story Endings. the Proceedings of <i>CIKM 2020.</i>'
-                            }, {
-                                web: "https://github.com/blmoistawinde/dgcn_tagging",
-                                title: "Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging",
-                                abs: "Audio tagging aims at predicting sound events occurred in a recording. Traditional models require enormous laborious annotations, otherwise performance degeneration will be the norm. Therefore, we investigate robust audio tagging models in low-resource scenarios with the enhancement of knowledge graphs. Besides existing ontological knowledge, we further propose a semi-automatic approach that can construct temporal knowledge graphs on diverse domain-specific label sets. Moreover, we leverage a variant of relation-aware graph neural network, D-GCN, to combine the strength of the two knowledge types. Experiments on AudioSet and SONYC urban sound tagging datasets suggest the effectiveness of the introduced temporal knowledge, and the advantage of the combined KGs with D-GCN over single knowledge source.",
-                                link: "https://arxiv.org/abs/2110.01009",
-                                code: "https://github.com/blmoistawinde/dgcn_tagging",
-                                data: "https://github.com/blmoistawinde/dgcn_tagging",
-                                cite: 'Zhiling Zhang, Zelin Zhou, Haifeng Tang, Guangwei Li, Mengyue Wu*, Kenny Q Zhu*. Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging. the Proceedings of <i>CIKM 2021.</i>'
-                            }]
+                            ProjList = [{}]
                             for (i = 0; i < ProjList.length; i++) {
                                 paper = ProjList[i];
                                 document.write('<p>');
@@ -187,15 +138,139 @@
                         </script>
                     </div>
                 </div>
+
+
+
                 <div class="panel">
-                    <h4 id="gen">Text Generation</h4>
+                    <h4 id="mh">NLP for Mental Health</h4>
                 </div>
                 <div class="row">
                     <div class="twelve columns">
-                        <!--{ web: "", title: "", abstract: "", link:"", code: "", data: "", cite: ''} -->
+                    <script>
+                            ProjList = [
+				{
+                                web: "",
+                                title: "Symptom Identification for Interpretable Detection of Multiple Mental Disorders on Social Media",
+                                abs: "Mental disease detection (MDD) from social media has suffered from poor generalizability and interpretability, due to lack of symptom modeling. This paper introduces PsySym, the first annotated symptom identification corpus of multiple psychiatric disorders, to facilitate further research progress. PsySym is annotated according to a knowledge graph of the 38 symptom classes related to 7 mental diseases complied from established clinical manuals and scales, and a novel annotation framework for diversity and quality. Experiments show that symptom-assisted MDD enabled by PsySym can outperform strong pure-text baselines. We also exhibit the convincing MDD explanations provided by symptom predictions with case studies, and point to their further potential applications. ",
+                                link: "https://arxiv.org/abs/2205.11308",
+                                code: "https://github.com/blmoistawinde/EMNLP22-PsySym",
+                                data: "https://github.com/blmoistawinde/EMNLP22-PsySym",
+                                cite: 'Zhiling Zhang*, Siyuan Chen*, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>EMNLP 2022</i>.'
+                            }, {
+                                web: "",
+                                title: "Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression",
+                                abs: "Depression is a prominent health challenge to the world, and early risk detection (ERD) of depression from online posts can be a promising technique for combating the threat. Early depression detection faces the challenge of efficiently tackling streaming data, balancing the tradeoff between timeliness, accuracy and explainability. To tackle these challenges, we propose a psychiatric scale guided risky post screening method that can capture risky posts related to the dimensions defined in clinical depression scales, and providing interpretable diagnostic basis. A Hierarchical Attentional Network equipped with BERT (HAN-BERT) is proposed to further advance explainable predictions. For ERD, we propose an online algorithm based on an evolving queue of risky posts that can significantly reduce the number of model inferences to boost efficiency. Experiments show that our method outperforms the competitive feature-based and neural models under conventional depression detection settings, and achieves simultaneous improvement in both efficacy and efficiency for ERD.",
+                                link: "https://github.com/blmoistawinde/scale_early_depress_detect/blob/main/paper.pdf",
+                                code: "https://github.com/blmoistawinde/scale_early_depress_detect",
+                                data: "https://github.com/blmoistawinde/scale_early_depress_detect",
+                                cite: 'Zhiling Zhang, Siyuan Chen, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>IJCAI 2022</i>.'
+                            }
+]
+                            for (i = 0; i < ProjList.length; i++) {
+                                paper = ProjList[i];
+                                document.write('<p>');
+                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
+                                document.write('<a href="' + paper.link + '">[paper]</a>');
+                                document.write('&nbsp;&nbsp;');
+                                document.write('<a href="' + paper.code + '">[code]</a>');
+                                document.write('&nbsp;&nbsp;');
+                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
+                                // document.write('<nobr>')
+                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
+                                // document.write()
+                                // document.write('</nobr>')
+                                // document.write('<button type="button">Show All</button><br>')
+                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
+                                document.write('<hr>');
+
+                            }
+                        </script>
+                    </div>
+                </div>
+
+
+                <div class="panel">
+                    <h4 id="lw">Light-weight NLP</h4>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
                         <script>
-                            TextGenerationList = [{
-                                web: "https://yizhuliu.github.io/Welcome/",
+                            ProjList = [
+			{
+                                web: "",
+                                title: "Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning",
+                                abs: "Pretrained masked language models (PLMs) were shown to be inheriting a considerable amount of relational knowledge from the source corpora. In this paper, we present an in-depth and comprehensive study concerning specializing PLMs into relational models from the perspective of network pruning. We show that it is possible to find subnetworks capable of representing grounded commonsense relations at non-trivial sparsity while being more generalizable than original PLMs in scenarios requiring knowledge of single or multiple commonsense relations.",
+                                link: "",
+                                code: "https://github.com/DRSY/LAMP",
+                                data: "https://github.com/DRSY/LAMP",
+                                cite: 'Siyu Ren and Kenny Q. Zhu. Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning. In the Proceedings of <i>Findings of NAACL 2022</i>.'
+                            }, {
+                                web: "",
+                                title: "Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval",
+                                abs: "Current text-image approaches (e.g., CLIP) typically adopt dual-encoder architecture us- ing pre-trained vision-language representation. However, these models still pose non-trivial memory requirements and substantial incremental indexing time, which makes them less practical on mobile devices. In this paper, we present an effective two-stage framework to compress large pre-trained dual-encoder for lightweight text-image retrieval. The resulting model is smaller (39% of the original), faster (1.6x/2.9x for processing image/text respectively), yet performs on par with or better than the original full model on Flickr30K and MSCOCO benchmarks. We also open-source an accompanying realistic mobile image search application.",
+                                link: "https://arxiv.org/abs/2204.13913",
+                                code: "https://github.com/DRSY/MoTIS",
+                                data: "https://github.com/DRSY/MoTIS",
+                                cite: 'Siyu Ren and Kenny Q. Zhu. Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval. In the Proceedings of <i>NAACL 2022</i>.'
+                            }
+]
+                            for (i = 0; i < ProjList.length; i++) {
+                                paper = ProjList[i];
+                                document.write('<p>');
+                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
+                                document.write('<a href="' + paper.link + '">[paper]</a>');
+                                document.write('&nbsp;&nbsp;');
+                                document.write('<a href="' + paper.code + '">[code]</a>');
+                                document.write('&nbsp;&nbsp;');
+                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
+                                // document.write('<nobr>')
+                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
+                                // document.write()
+                                // document.write('</nobr>')
+                                // document.write('<button type="button">Show All</button><br>')
+                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
+                                document.write('<hr>');
+
+                            }
+                        </script>
+                    </div>
+                </div>
+
+
+
+                <div class="panel">
+                    <h4 id="cr">Previous Projects</h4>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <script>
+                            ProjList = [{
+                                web: "project_causal.html",
+                                title: "CausalNet: Causality Extraction and Reasoning",
+                                abs: "Causality can help for human reasoning and decision making. We extract casuality(cause-effect pairs) from web corpus and build a web-scale causality network (CausalNet). Backed by this network, we propose a framework for commonsense causal reasoning.",
+                                link: "http://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-copa.pdf",
+                                code: "https://github.com/cs-zyluo/CausalNet",
+                                data: "https://adapt.seiee.sjtu.edu.cn/causal/",
+                                cite: 'Zhiyi Luo, Yuchen Sha, Kenny Q. Zhu, Seung-won Hwang, Zhongyuan Wang, "Commonsense Causal Reasoning between Short Texts", Proc. of 15th Int. Conf. on Principles of Knowledge Representation and Reasonging (KR\'2016), Cape Town, South Africa.'
+                            },
+{
+                                web: "https://shanshan437421.github.io/",
+                                title: "Enhanced Story Representation by ConceptNet for Predicting Story Endings",
+                                abs: "Predicting endings for narrative stories is a grand challenge for machine commonsense reasoning. The task requires accurate representation of the story semantics and structured logic knowledge. Pre-trained language models, such as BERT, made progress recently in this task by exploiting spurious statistical patterns in the test dataset, instead of “understanding” the stories per se. In this paper, we propose to improve the representation of stories by first simplifying the sentences to some key concepts and second modeling the latent relationship between the key ideas within the story. Such enhanced sentence representation, when used with pre-trained language models, makes substantial gains in prediction accuracy on the popular Story Cloze Test without utilizing the biased validation data.",
+                                link: "https://github.com/shanshan437421/Simplification/blob/master/paper.pdf",
+                                code: "https://github.com/shanshan437421/Simplification",
+                                data: "",
+                                cite: 'Shanshan Huang, Kenny Q. Zhu*, Qianzi Liao, Libin Shen and Yinggong Zhao. Enhanced Story Representation by ConceptNet for Predicting Story Endings. the Proceedings of <i>CIKM 2020.</i>'
+                            }, {
+                                web: "https://github.com/blmoistawinde/dgcn_tagging",
+                                title: "Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging",
+                                abs: "Audio tagging aims at predicting sound events occurred in a recording. Traditional models require enormous laborious annotations, otherwise performance degeneration will be the norm. Therefore, we investigate robust audio tagging models in low-resource scenarios with the enhancement of knowledge graphs. Besides existing ontological knowledge, we further propose a semi-automatic approach that can construct temporal knowledge graphs on diverse domain-specific label sets. Moreover, we leverage a variant of relation-aware graph neural network, D-GCN, to combine the strength of the two knowledge types. Experiments on AudioSet and SONYC urban sound tagging datasets suggest the effectiveness of the introduced temporal knowledge, and the advantage of the combined KGs with D-GCN over single knowledge source.",
+                                link: "https://arxiv.org/abs/2110.01009",
+                                code: "https://github.com/blmoistawinde/dgcn_tagging",
+                                data: "https://github.com/blmoistawinde/dgcn_tagging",
+                                cite: 'Zhiling Zhang, Zelin Zhou, Haifeng Tang, Guangwei Li, Mengyue Wu*, Kenny Q Zhu*. Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging. the Proceedings of <i>CIKM 2021.</i>'
+                            },
+				{ web: "https://yizhuliu.github.io/Welcome/",
                                 title: "Controlling Length in Abstractive Summarization Using a Convolutional Neural Network",
                                 abs: "Convolutional neural networks (CNNs) have met great success in abstractive summarization, but they cannot effectively generate summaries of desired lengths. Because generated summaries are used in difference scenarios which may have space or length constraints, the ability to control the summary length in abstractive summarization is an important problem. In this paper, we propose an approach to constrain the summary length by extending a convolutional sequence to sequence model. The results show that this approach generates high-quality summaries with user defined length, and outperforms the baselines consistently in terms of ROUGE score, length variations and semantic similarity.",
                                 link: "https://www.aclweb.org/anthology/D18-1444/",
@@ -258,34 +333,7 @@
                                 code: "https://github.com/YizhuLiu/Opinion-Summarization",
                                 data: "https://github.com/YizhuLiu/Opinion-Summarization",
                                 cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Opinion Summarization by Weak-Supervision from Mix-structured Data. In Proceedings of <i>EMNLP 2022</i>"
-                            }, ]
-                            for (i = 0; i < TextGenerationList.length; i++) {
-                                paper = TextGenerationList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                document.write('<div name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</div>');
-                                document.write('<a name="button">Show All</a><br><br>')
-                                // document.write('<b>Abstract</b>: '+ paper.abs +'<br>');
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                    </div>
-                </div>
-                <div class="panel">
-                    <h4 id="dia">Dialogue and Question Answering</h4>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                        <!--{ web: "", title: "", abstract: "", link:"", code: "", data: "", cite: ''} -->
-                        <script>
-                            ProjList = [{
+                            }, {
                                 web: "",
                                 title: "Matching Questions and Answers in Online Forum Dialogues",
                                 abs: "Matching question-answer relations between two turns in conversations is not only the first step in analyzing dialogue structures, but also valuable for training dialogue systems. This paper presents a QA matching model considering both distance information and dialogue history by two simultaneous attention mechanisms called mutual attention. Given scores computed by the trained model between each non-question turn with its candidate questions, a greedy matching strategy is used for final predictions. Because existing dialogue datasets such as the Ubuntu dataset are not suitable for the QA matching task, we further create a dataset with 1,000 labeled dialogues and demonstrate that our proposed model outperforms the state-of-the-art and other strong baselines, particularly for matching long-distance QA pairs. ",
@@ -333,36 +381,7 @@
                                 code: "https://github.com/ruolanyang/ChatMatch",
                                 data: "https://github.com/ruolanyang/ChatMatch",
                                 cite: "Ruolan Yang, Zitong Li, Haifeng Tang and Kenny Q. Zhu. ChatMatch: Evaluating Chatbots by Autonomous Chat Tournaments. In Proceedings of ACL 2022."
-                            }, ]
-                            for (i = 0; i < ProjList.length; i++) {
-                                paper = ProjList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                // document.write('<nobr>')
-                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
-                                // document.write()
-                                // document.write('</nobr>')
-                                // document.write('<button type="button">Show All</button><br>')
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                    </div>
-                </div>
-                <div class="panel">
-                    <h4 id="nlp">Information Extraction</h4>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                        <!--{ web: "", title: "", abstract: "", link:"", code: "", data: "", cite: ''} -->
-                        <script>
-                            OtherNLPList = [{
+                            }, {
                                 web: "",
                                 title: "MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data",
                                 abs: "Few-shot relation classification seeks to classify incoming query instances after meeting only few support instances.This ability is gained by training with large amount of in-domain annotated data. In this paper, we tackle an even harder problem by further limiting the amount of data available at training time. We propose a few-shot learning framework for relation classification, which is particularly powerful when the training data is very small. In this framework, models not only strive to classify query instances, but also seek underlying knowledge about the support instances to obtain better instance representations. The framework also includes a method for aggregating cross-domain knowledge into models by open-source task enrichment. Additionally, we construct a brand new dataset: the TinyRel-CM dataset, a few-shot relation classification dataset in health domain with purposely small training data and challenging relation classes. Experimental results demonstrate that our framework brings performance gains for most underlying classification models, outperforms the state-of-the-art results given small training data, and achieves competitive results with sufficiently large training data.",
@@ -370,50 +389,8 @@
                                 code: "https://github.com/XiaoqingGeng/MICK",
                                 data: "https://github.com/XiaoqingGeng/MICK/tree/master/data",
                                 cite: 'Xiaoqing Geng, Xiwen Chen and Kenny Q. Zhu. MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data. In the Proceedings of <i>CIKM 2020</i>.'
-                            }, ]
-                            for (i = 0; i < OtherNLPList.length; i++) {
-                                paper = OtherNLPList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                document.write('<div name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</div>');
-                                document.write('<a name="button">Show All</a><br><br>')
-                                // document.write('<b>Abstract</b>: '+ paper.abs+'<br>');
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                    </div>
-                </div>
-                <div class="panel">
-                    <h4 id="pl">Other NLP</h4>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                        <!--{ web: "", title: "", abstract: "", link:"", code: "", data: "", cite: ''} -->
-                        <script>
-                            ProgrammingLanguageList = [{
-                                web: "",
-                                title: "Symptom Identification for Interpretable Detection of Multiple Mental Disorders on Social Media",
-                                abs: "Mental disease detection (MDD) from social media has suffered from poor generalizability and interpretability, due to lack of symptom modeling. This paper introduces PsySym, the first annotated symptom identification corpus of multiple psychiatric disorders, to facilitate further research progress. PsySym is annotated according to a knowledge graph of the 38 symptom classes related to 7 mental diseases complied from established clinical manuals and scales, and a novel annotation framework for diversity and quality. Experiments show that symptom-assisted MDD enabled by PsySym can outperform strong pure-text baselines. We also exhibit the convincing MDD explanations provided by symptom predictions with case studies, and point to their further potential applications. ",
-                                link: "https://arxiv.org/abs/2205.11308",
-                                code: "https://github.com/blmoistawinde/EMNLP22-PsySym",
-                                data: "https://github.com/blmoistawinde/EMNLP22-PsySym",
-                                cite: 'Zhiling Zhang*, Siyuan Chen*, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>EMNLP 2022</i>.'
                             }, {
-                                web: "",
-                                title: "Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression",
-                                abs: "Depression is a prominent health challenge to the world, and early risk detection (ERD) of depression from online posts can be a promising technique for combating the threat. Early depression detection faces the challenge of efficiently tackling streaming data, balancing the tradeoff between timeliness, accuracy and explainability. To tackle these challenges, we propose a psychiatric scale guided risky post screening method that can capture risky posts related to the dimensions defined in clinical depression scales, and providing interpretable diagnostic basis. A Hierarchical Attentional Network equipped with BERT (HAN-BERT) is proposed to further advance explainable predictions. For ERD, we propose an online algorithm based on an evolving queue of risky posts that can significantly reduce the number of model inferences to boost efficiency. Experiments show that our method outperforms the competitive feature-based and neural models under conventional depression detection settings, and achieves simultaneous improvement in both efficacy and efficiency for ERD.",
-                                link: "https://github.com/blmoistawinde/scale_early_depress_detect/blob/main/paper.pdf",
-                                code: "https://github.com/blmoistawinde/scale_early_depress_detect",
-                                data: "https://github.com/blmoistawinde/scale_early_depress_detect",
-                                cite: 'Zhiling Zhang, Siyuan Chen, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>IJCAI 2022</i>.'
-                            }, {
+, {
                                 web: "",
                                 title: "Knowledge-Driven Distractor Generation for Cloze-style Multiple Choice Questions",
                                 abs: "In this paper, we propose a novel configurable framework to automatically generate distractive choices for open-domain cloze-style multiple-choice questions. The framework incorporates a general-purpose knowledge base to effectively create a small distractor candidate set, and a feature-rich learning-to-rank model to select distractors that are both plausible and reliable. Experimental results on a new dataset across four domains show that our framework yields distractors outperforming previous methods both by automatic and human evaluation. The dataset can also be used as a benchmark for distractor generation research in the future.",
@@ -429,23 +406,7 @@
                                 code: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
                                 data: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
                                 cite: ""
-                            }, {
-                                web: "",
-                                title: "Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning",
-                                abs: "Pretrained masked language models (PLMs) were shown to be inheriting a considerable amount of relational knowledge from the source corpora. In this paper, we present an in-depth and comprehensive study concerning specializing PLMs into relational models from the perspective of network pruning. We show that it is possible to find subnetworks capable of representing grounded commonsense relations at non-trivial sparsity while being more generalizable than original PLMs in scenarios requiring knowledge of single or multiple commonsense relations.",
-                                link: "",
-                                code: "https://github.com/DRSY/LAMP",
-                                data: "https://github.com/DRSY/LAMP",
-                                cite: 'Siyu Ren and Kenny Q. Zhu. Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning. In the Proceedings of <i>Findings of NAACL 2022</i>.'
-                            }, {
-                                web: "",
-                                title: "Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval",
-                                abs: "Current text-image approaches (e.g., CLIP) typically adopt dual-encoder architecture us- ing pre-trained vision-language representation. However, these models still pose non-trivial memory requirements and substantial incremental indexing time, which makes them less practical on mobile devices. In this paper, we present an effective two-stage framework to compress large pre-trained dual-encoder for lightweight text-image retrieval. The resulting model is smaller (39% of the original), faster (1.6x/2.9x for processing image/text respectively), yet performs on par with or better than the original full model on Flickr30K and MSCOCO benchmarks. We also open-source an accompanying realistic mobile image search application.",
-                                link: "https://arxiv.org/abs/2204.13913",
-                                code: "https://github.com/DRSY/MoTIS",
-                                data: "https://github.com/DRSY/MoTIS",
-                                cite: 'Siyu Ren and Kenny Q. Zhu. Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval. In the Proceedings of <i>NAACL 2022</i>.'
-                            }, {
+                            },  {
                                 web: "",
                                 title: "Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation",
                                 abs: "News recommendation for anonymous readers is a useful but challenging task for many news portals, where interactions between readers and articles are limited within a temporary login session. Previous works tend to formulate session-based recommendation as a next item prediction task, while they neglect the implicit feedback from user behaviors, which indicates what users really like or dislike. Hence, we propose a comprehensive framework to model user behaviors through positive feedback (i.e., the articles they spend more time on) and negative feedback (i.e., the articles they choose to skip without clicking in). Moreover, the framework implicitly models the user using their session start time, and the article using its initial publishing time, in what we call neutral feedback. Empirical evaluation on three real-world news datasets shows the framework's promising performance of more accurate, diverse and even unexpectedness recommendations than other state-of-the-art session-based recommendation approaches.",
