@@ -96,7 +96,7 @@
                 <hr>
                 <ul>
                     <li>
-                        <a href="#al">Animal Language</a>
+                        <a href="#al">Animal Language Processing</a>
                     </li>
                     <li>
                         <a href="#mh">NLP for Mental Health</a>
@@ -111,7 +111,7 @@
             </div>
             <div class="nine columns">
                 <div class="panel">
-                    <h4 id="al">Animal Language</h4>
+                    <h4 id="al">Animal Language Processing</h4>
                 </div>
                 <div class="row">
                     <div class="twelve columns">
@@ -237,7 +237,6 @@
                 </div>
 
 
-
                 <div class="panel">
                     <h4 id="pp">Previous Projects</h4>
                 </div>
@@ -252,8 +251,7 @@
                                 code: "https://github.com/cs-zyluo/CausalNet",
                                 data: "https://adapt.seiee.sjtu.edu.cn/causal/",
                                 cite: 'Zhiyi Luo, Yuchen Sha, Kenny Q. Zhu, Seung-won Hwang, Zhongyuan Wang, "Commonsense Causal Reasoning between Short Texts", Proc. of 15th Int. Conf. on Principles of Knowledge Representation and Reasonging (KR\'2016), Cape Town, South Africa.'
-                            },
-{
+                            }, {
                                 web: "https://shanshan437421.github.io/",
                                 title: "Enhanced Story Representation by ConceptNet for Predicting Story Endings",
                                 abs: "Predicting endings for narrative stories is a grand challenge for machine commonsense reasoning. The task requires accurate representation of the story semantics and structured logic knowledge. Pre-trained language models, such as BERT, made progress recently in this task by exploiting spurious statistical patterns in the test dataset, instead of “understanding” the stories per se. In this paper, we propose to improve the representation of stories by first simplifying the sentences to some key concepts and second modeling the latent relationship between the key ideas within the story. Such enhanced sentence representation, when used with pre-trained language models, makes substantial gains in prediction accuracy on the popular Story Cloze Test without utilizing the biased validation data.",
@@ -380,7 +378,7 @@
                                 link: "https://aclanthology.org/2022.acl-long.522.pdf",
                                 code: "https://github.com/ruolanyang/ChatMatch",
                                 data: "https://github.com/ruolanyang/ChatMatch",
-                                cite: "Ruolan Yang, Zitong Li, Haifeng Tang and Kenny Q. Zhu. ChatMatch: Evaluating Chatbots by Autonomous Chat Tournaments. In Proceedings of ACL 2022."
+                                cite: "Ruolan Yang, Zitong Li, Haifeng Tang and Kenny Q. Zhu. ChatMatch: Evaluating Chatbots by Autonomous Chat Tournaments. In Proceedings of <i>ACL 2022</i>."
                             }, {
                                 web: "",
                                 title: "MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data",
@@ -390,7 +388,6 @@
                                 data: "https://github.com/XiaoqingGeng/MICK/tree/master/data",
                                 cite: 'Xiaoqing Geng, Xiwen Chen and Kenny Q. Zhu. MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data. In the Proceedings of <i>CIKM 2020</i>.'
                             }, {
-, {
                                 web: "",
                                 title: "Knowledge-Driven Distractor Generation for Cloze-style Multiple Choice Questions",
                                 abs: "In this paper, we propose a novel configurable framework to automatically generate distractive choices for open-domain cloze-style multiple-choice questions. The framework incorporates a general-purpose knowledge base to effectively create a small distractor candidate set, and a feature-rich learning-to-rank model to select distractors that are both plausible and reliable. Experimental results on a new dataset across four domains show that our framework yields distractors outperforming previous methods both by automatic and human evaluation. The dataset can also be used as a benchmark for distractor generation research in the future.",
@@ -406,7 +403,7 @@
                                 code: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
                                 data: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
                                 cite: ""
-                            },  {
+                            }, {
                                 web: "",
                                 title: "Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation",
                                 abs: "News recommendation for anonymous readers is a useful but challenging task for many news portals, where interactions between readers and articles are limited within a temporary login session. Previous works tend to formulate session-based recommendation as a next item prediction task, while they neglect the implicit feedback from user behaviors, which indicates what users really like or dislike. Hence, we propose a comprehensive framework to model user behaviors through positive feedback (i.e., the articles they spend more time on) and negative feedback (i.e., the articles they choose to skip without clicking in). Moreover, the framework implicitly models the user using their session start time, and the article using its initial publishing time, in what we call neutral feedback. Empirical evaluation on three real-world news datasets shows the framework's promising performance of more accurate, diverse and even unexpectedness recommendations than other state-of-the-art session-based recommendation approaches.",
@@ -414,7 +411,9 @@
                                 code: "https://github.com/summmeer/session-based-news-recommendation",
                                 data: "https://github.com/summmeer/session-based-news-recommendation",
                                 cite: 'Shansan Gong and Kenny Q. Zhu. Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation. In <i>Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval. 2022</i>.'
-                            }, ]
+                            }, 
+]
+
                             for (i = 0; i < ProjList.length; i++) {
                                 paper = ProjList[i];
                                 document.write('<p>');
@@ -424,9 +423,11 @@
                                 document.write('<a href="' + paper.code + '">[code]</a>');
                                 document.write('&nbsp;&nbsp;');
                                 document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                document.write('<div name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</div>');
-                                document.write('<a name="button">Show All</a><br><br>')
-                                // document.write('<b>Abstract</b>: '+ paper.abs+'<br>');
+                                // document.write('<nobr>')
+                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
+                                // document.write()
+                                // document.write('</nobr>')
+                                // document.write('<button type="button">Show All</button><br>')
                                 document.write('<b>Cite</b>: ' + paper.cite + '<br>');
                                 document.write('<hr>');
 
@@ -435,6 +436,7 @@
                     </div>
                 </div>
             </div>
+
             <script>
                 let buttons = document.getElementsByName("button");
 
