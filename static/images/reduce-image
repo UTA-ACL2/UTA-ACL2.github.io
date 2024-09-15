@@ -1,0 +1,7 @@
+#!/bin/bash
+for f in "$@"
+do
+    smallf="${f/./_small.}"
+    echo "convert $f -resize 300x $smallf"
+    convert $f -resize 300x $smallf
+done
