@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Gender Audio Examples</title>
+  <script src="https://unpkg.com/wavesurfer.js@7"></script>
+  <script src="https://unpkg.com/wavesurfer.js@7/dist/plugins/spectrogram.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      color: #444;
+      margin-top: 30px;
+    }
+    .case-container {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    .audio-box {
+      margin: 10px 0;
+    }
+    .spectrogram {
+      margin-top: 10px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ccc;
+      display: inline-block;
+    }
+    .waveform {
+      margin-top: 10px;
+    }
+    .clip-number {
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dog Gender Audio Examples</h1>
+  <div id="content"></div>
+  <script>
+    const baseFolder = 'dog_gender';
+    const cases = [
+      { name: 'Both Got Right', folder: 'both_got_right', count: 5, description:`<ul><li>Little to none human speech.</li><li>Little to none background noise.</li><li>Big portion of audio is dog bark.</li><li>Both complex and simple dog barks.</li></ul>` },
+      { name: 'Both Got Wrong', folder: 'both_got_wrong', count: 8, description:`<ul> <li>Contains background noise.</li> <li>Not enough bark information or bark too short. (Clip numbers 3, 5, majority)</li> <li>Contains external noise, non-dog barks, and other sounds (Clip numbers 2, 6, 8) (Non-dog noises)</li> <li>Audio contains human speech (See clip numbers 4, 7).</li> </ul>` },
+      { name: 'Only Linguistics Got Right', folder: 'only_linguistics_got_right', count: 6, description:`<ul> <li>Complex dog barks (majority).</li> <li>Distinct patterns in the spectrograms, mostly in lines.</li> <li>Linguistics method excels when bark is complex or when there is enough bark information.</li> </ul>` },
+      { name: 'Only Acoustic Got Right', folder: 'only_acoustic_got_right', count: 6, description:`<ul> <li>Only one short dog bark (Not enough information for linguistics method) (Clip numbers 1, 2).</li> <li>One distinct bark and the rest is external noise (Clip numbers 2, 3, 4, 5, 6).</li> <li>Acoustic method does max pooling to take the most prominent features; this is why one bark or a small amount of information is enough.</li> </ul>` }
+    ];
+
+    const contentDiv = document.getElementById('content');
+
+    cases.forEach(caseData => {
+      let description = caseData.description;
+      // add description to description
+      const descriptionDiv = document.createElement('div');
+      descriptionDiv.innerHTML = description;
+
+      const caseContainer = document.createElement('div');
+      caseContainer.className = 'case-container';
+      const heading = document.createElement('h2');
+      heading.textContent = caseData.name;
+      caseContainer.appendChild(heading);
+  
+      const table = document.createElement('table');
+      let row = document.createElement('tr');
+
+      for (let i = 1; i <= caseData.count; i++) {
+
+        if (i == 1) {
+          caseContainer.appendChild(descriptionDiv);
+        }
+
+        const audioPath = `${baseFolder}/${caseData.folder}/${i}.wav`;
+        const waveformId = `waveform-${caseData.folder}-${i}`;
+        const spectrogramId = `spectrogram-${caseData.folder}-${i}`;
+
+        const cell = document.createElement('td');
+        const audioBox = document.createElement('div');
+        audioBox.className = 'audio-box';
+
+        // Audio element
+        const audioElement = document.createElement('audio');
+        audioElement.controls = true;
+        audioElement.src = audioPath;
+        audioBox.appendChild(audioElement);
+
+        // Clip number element
+        const clipNumber = document.createElement('span');
+        clipNumber.className = 'clip-number';
+        clipNumber.textContent = `Clip ${i}`;
+        audioBox.appendChild(clipNumber);  // Add clip number beside the audio control
+
+        // Waveform container
+        const waveformContainer = document.createElement('div');
+        waveformContainer.className = 'waveform';
+        waveformContainer.id = waveformId;
+        audioBox.appendChild(waveformContainer);
+
+        // Spectrogram container
+        const spectrogramContainer = document.createElement('div');
+        spectrogramContainer.className = 'spectrogram';
+        spectrogramContainer.id = spectrogramId;
+        audioBox.appendChild(spectrogramContainer);
+
+        // Append audioBox to the cell
+        cell.appendChild(audioBox);
+        row.appendChild(cell);
+
+        // Break the row after 4 items
+        if (i % 4 === 0) {
+          table.appendChild(row);
+          row = document.createElement('tr');
+        }
+
+        // Append to DOM first, then initialize WaveSurfer
+        caseContainer.appendChild(table);
+        contentDiv.appendChild(caseContainer);
+
+        // Initialize WaveSurfer after containers are in the DOM
+        setTimeout(() => {
+          const ws = WaveSurfer.create({
+            container: `#${waveformId}`,
+            waveColor: 'violet',
+            progressColor: 'purple',
+            sampleRate: 16000,
+            plugins: [
+              WaveSurfer.Spectrogram.create({
+                container: `#${spectrogramId}`,
+                labels: true,
+                splitChannels: false
+              })
+            ]
+          });
+
+          // Load audio file
+          ws.load(audioPath);
+
+          // Sync playback with the audio element
+          audioElement.addEventListener('play', () => ws.play());
+          audioElement.addEventListener('pause', () => ws.pause());
+        }, 0);
+      }
+
+      // Append remaining row if it has content
+      if (row.childNodes.length > 0) {
+        table.appendChild(row);
+      }
+
+      // add hr 
+      let hr = document.createElement('hr');
+      hr.style.marginTop = '20px';
+      caseContainer.appendChild(hr);
+    });
+  </script>
+</body>
+</html>
