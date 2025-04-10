@@ -1,163 +1,31 @@
-<h1 id="barkopedia-a-canine-vocalization-understanding-challenge-omit-from-toc-">Barkopedia: A Canine Vocalization Understanding Challenge <!-- omit from toc --></h1>
-<p><a href="https://huggingface.co/safe-challenge"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20-Hugging%20Face-yellow" alt="Hugging Face"></a> <a href="https://discord.gg/bxNsutKmTH"><img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&amp;logoColor=white" alt="Discord"></a></p>
-<p><img src="logo.jpg" alt=""></p>
-<p><strong>👉 All participants are required to register for the competition by filling out this <a href="https://forms.gle/5J8Yuh41Lv8GAF7w8">Google Form</a></strong></p>
-<p><a href="#-overview">📊 Overview</a> • <a href="#-detailed-leaderboard">🥇 Detailed Leaderboard</a> • <a href="#-prize">🏆 Prize</a> • <a href="#-paper-submission-and-dates">📜 Paper Submission and Dates</a> • <a href="#-tasks">📝 Tasks</a> • <a href="#-data">📈 Data</a> • <a href="#-model-submission">🤖 Model Submission</a> • <a href="#-create-model-repo">📂 Create Model Repo</a> • <a href="#-submit">🔘 Submit</a> • <a href="#-helpful-stuff">🆘 Helpful Stuff</a> • <a href="#-evaluation">🔍 Evaluation</a> • <a href="#️-rules">⚖️ Rules</a></p>
-<h2 id="-updates">📣 Updates</h2>
-<p>2025-03-25</p>
-<ul>
-<li>Added two baselines to the leaderboard</li>
-<li>Added <a href="https://discord.gg/bxNsutKmTH">discord server</a> for additional help/support/discussion/etc.</li>
-</ul>
-<p>2025-04-03  </p>
-<ul>
-<li>Task 2 is now open. Detection of Processed Audio. <a href="https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2">https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2</a></li>
-<li>🔥 <a href="https://huggingface.co/safe-challenge/safe-example-submission-custom-env">Example on including a custom environment in your model repo</a></li>
-</ul>
-<p>2025-04-04</p>
-<ul>
-<li>New detailed public <a href="https://huggingface.co/spaces/safe-challenge/leaderboard-public">leaderboard space</a></li>
-</ul>
-<p>2025-04-07</p>
-<ul>
-<li>Updated <a href="debug_example.md">debug example</a> to turn off network access when running model to better reproduce submissions on HF</li>
-</ul>
-<p>2025-04-08</p>
-<ul>
-<li>Provided updated information on Round 1 and Round 2 paper and poster submission processes. </li>
-</ul>
-<h2 id="-overview">📊 Overview</h2>
-<p>To advance the state of the art in audio forensics, we are launching a funded evaluation challenge at <a href="https://www.ihmmsec.org">IH&amp;MMSEC2025</a> to drive innovation in detecting and attributing synthetic and manipulated audio artifacts. This challenge will focus on several critical aspects, including generalizability across diverse audio sources, robustness against evolving synthesis techniques, and computational efficiency to enable real-world applications. The rapid advancements in audio synthesis, fueled by the increasing availability of new generators and techniques, underscore the urgent need for effective solutions to authenticate audio content and combat emerging threats. Sponsored by the ULRI Digital Safety Research Institute, this initiative aims to mobilize the research community to address this pressing issue.  </p>
-<p>Sign up here to participate and receive updates: <a href="https://forms.gle/5J8Yuh41Lv8GAF7w8">Google Form</a></p>
-<h2 id="-detailed-leaderboard">🥇 Detailed Leaderboard</h2>
-<p><a href="https://safe-challenge-leaderboard-public.hf.space">Public Leaderboard</a>
-<!--  [![leaderboard](leaderboard_latest.png)](leaderboard_latest.png) --></p>
-<iframe
-    src="https://safe-challenge-leaderboard-public.hf.space"
-    frameborder="0"
-    width="850"
-    height="450"
-></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barkopedia</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+  <style>
+    .markdown-body {
+      max-width: 900px;
+      margin: auto;
+      padding: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="markdown-content" class="markdown-body">Loading Barkopedia...</div>
 
-
-<h2 id="-prize">🏆 Prize</h2>
-<p>The most promising solutions may be eligible for research grants to further advance their development. A travel stipend will be available to the highest-performing teams to support attendance at the IH&amp;MMSEC workshop, where they can present their technical approach and results.</p>
-<p><strong>All participants are required to register for the competition</strong></p>
-<ul>
-<li>Sign up here to participate and receive updates: <a href="https://forms.gle/5J8Yuh41Lv8GAF7w8">Google Form</a></li>
-<li>For info please contact: SafeChallenge2025@gmail.com</li>
-<li>You can also create an issue: <a href="https://github.com/stresearch/SAFE">https://github.com/stresearch/SAFE</a></li>
-<li>See instructions on how to submit and <a href="#-helpful-stuff">🆘 Helpful Stuff</a>, <a href="debug_example.md">debug example</a>, open issues for reference or join our <a href="https://discord.gg/bxNsutKmTH">discord server</a></li>
-</ul>
-<h2 id="-paper-submission-and-dates">📜 Paper Submission and Dates</h2>
-<p>All papers for this special session undergo the regular review procedure and must be submitted through the workshop paper submission system following the link given on home page: <a href="https://www.ihmmsec.org">https://www.ihmmsec.org</a>. For this special session in particular, authors must select the track &quot;COMPETITION TRACK&quot; on the submission website during the submission.</p>
-<ul>
-<li><del>Practice Submission Opens: February 26, 2025</del></li>
-<li><del>Competition Opens: March 3, 2025</del></li>
-<li>Round 1 Submission deadline: May 05, 2025 (the papers accepted in Round 1 will be published in the proceedings for IH&amp;MMSEC 2025 and will be presented during the oral session of the conference)</li>
-<li>Round 2 Submission deadline: June 02, 2025 (performers participating in Round 1 whose algorithms score well in the system will be invited to present a poster at the IH&amp;MMSEC workshop)</li>
-</ul>
-<p>For any question regarding paper submission, please contact chairs: acm.ihmmsec25@gmail.com.</p>
-<h2 id="-tasks">📝 Tasks</h2>
-<p>The competition will consist of three detection tasks. For each task, the object is to detect if an audio file contains machine generated speech. Not all tasks will be open at the same time. </p>
-<ul>
-<li>Practice (✅ Open): A practice task to troubleshoot model submission.<pre><code>  [<span class="hljs-string">https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice</span>](<span class="hljs-link">https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice</span>)
-</code></pre></li>
-<li>Task 1 (✅ Open): Detection of Generated Audio. Audio files are unmodified from the original output from the models or the pristine sources.<pre><code>  [<span class="hljs-string">https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask1</span>](<span class="hljs-link">https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask1</span>)
-</code></pre></li>
-<li>Task 2 (✅ Open): Detection of Processed Audio. Audio files will be compressed with several common audio compression codecs. The audio files will also be resampled according to several sampling rates. Only the geneated files are augmented. The pristines remain the same.<pre><code>  [<span class="hljs-string">https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2</span>](<span class="hljs-link">https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2</span>)
-</code></pre></li>
-<li>Task 3 (❌ Closed): Bonus Task (Details TBD)</li>
-</ul>
-<h2 id="-data">📈 Data</h2>
-<p>The dataset will consist of human and machine generated speech audio tracks. </p>
-<ul>
-<li>Human generated speech will be sourced from multiple sources and in multiple languages including but not limited to high quality in-studio and lower quality in-the-wild online recordings.</li>
-<li>Machine generated speech will be constructed using several SOTA TTS (text-to-speech) models. The models will be either open-source or closed-source.</li>
-<li>The audio files will vary in length but will be no longer than 60 seconds.</li>
-<li>Compression formats will also vary. (See practice submission and dataset on how to load the input data)</li>
-<li>The dataset will be balanced across sources. Each source (source of real audio and source of generated audio) will have an equal number of samples. </li>
-<li><strong>This competition will be fully blind.</strong> No data will be released. Only a small sample dataset will be released as part of a sample model.</li>
-</ul>
-<h2 id="-model-submission">🤖 Model Submission</h2>
-<p>This is a script based competetion. No data will be released before the competition. A subset of the data may be released after the competition. We will be using <a href="https://github.com/huggingface/competitions">hugginface competions platform</a>.</p>
-<h3 id="-create-model-repo">📂 Create Model Repo</h3>
-<p>Participants will be required to submit their model to be evaluated on the dataset by creating a <a href="https://huggingface.co/new">huggingface</a> model repository. Please use <a href="https://huggingface.co/safe-challenge/safe-example-submission">the example model repo</a> as a template.</p>
-<ul>
-<li><strong>The model that you submit will remain private</strong>. No one inlcuding the challenge organizers will have access to the model repo unless you decide to make the repo public.</li>
-<li>The model will be expected to read in the dataset and output file containing a <strong>detection score, binary decision and inference time</strong> for every input example.</li>
-<li>The dataset will be downloaded to <code>/tmp/data</code> inside the container during the evaluation run. See example model on how to load it.</li>
-<li>The only requirement is to have a <code>script.py</code> in the top level of the repo that saves a <code>submission.csv</code> file with the following columns. See <a href="sample_practice_submission.csv">sample practice submission file</a>.<ul>
-<li><code>id</code> : id of the example, strig</li>
-<li><code>pred</code> : binary decision, string, &quot;generated&quot; or &quot;pristine&quot;</li>
-<li><code>score</code>: decision score such as log likelihood score. Postive scores correspond to generated and negative to pristine. (This is optional and not used in evaluation but will help with analysis later)  </li>
-<li><code>time</code> : inference time for every example in seconds</li>
-</ul>
-</li>
-<li>All submissions will be evaluated using the same resources: NVIDIA <code>T4-medium</code> GPU instance. It has 8vCPUs, 30GB RAM, 16GB VRAM.</li>
-<li>All submissions will be evaluated in the same container that supports common ML frameworks and libraries:<ul>
-<li>Dockerfile: <a href="https://github.com/huggingface/competitions/blob/main/Dockerfile">https://github.com/huggingface/competitions/blob/main/Dockerfile</a></li>
-<li>Docker Image: <a href="https://hub.docker.com/r/huggingface/competitions/tags">https://hub.docker.com/r/huggingface/competitions/tags</a></li>
-<li>Requirements File: <a href="requirements.txt">requirements.txt</a></li>
-<li>If you&#39;d like to add another package to the requirments file create an issue here: <a href="https://github.com/stresearch/SAFE">https://github.com/stresearch/SAFE</a></li>
-<li><strong>During evalation, container will not have access to the internet</strong>. Participants should include all other required dependencies in the model repo.</li>
-<li><strong>💡 Remember: you can add anything to your model repo</strong> like models, python packages, etc.</li>
-</ul>
-</li>
-</ul>
-<h3 id="-submit">🔘 Submit</h3>
-<p>Once your model is ready, it&#39;s time to submit:   </p>
-<ul>
-<li>Go the task submision space (there is a seperate space for every task)</li>
-<li>Login with your Huggingface Credentials</li>
-<li>Teams consisting of multiple individuals should plan to submit under one Huggingface account to facilitate review and analysis results</li>
-<li>Enter the name of your model e.g. <code>safe-challenge/safe-example-submission</code> and click submit! 🎉</li>
-<li>Please use the same user name for all your submissions from the same team.</li>
-</ul>
-<h3 id="-helpful-stuff">🆘 Helpful Stuff</h3>
-<p>We provide an example model submission repo and a practice competition for troubleshooting.</p>
-<ul>
-<li>Take a look at an example model repo: <a href="https://huggingface.co/safe-challenge/safe-example-submission">https://huggingface.co/safe-challenge/safe-example-submission</a></li>
-<li>We encourage you to submit to a practice competition: <a href="https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice">https://huggingface.co/spaces/safe-challenge/SAFEChallengePractice</a></li>
-<li>It&#39;s using this pracice dataset: <a href="https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset">https://huggingface.co/datasets/safe-challenge/safe-challenge-practice-dataset</a></li>
-<li>💡 To reproduce all the steps in the submission locally, take a look at the debugging example: <a href="debug_example.md">debug example</a></li>
-<li>You won&#39;t be able to see any detailed error if your submission fails since it&#39;s run in a private space. <em>You can open a ticket or email us with your submission id, and we can look up the logs.</em> The easiest way is to trouble shoot locally using the above example.</li>
-<li><em>🔥New</em> <a href="https://huggingface.co/safe-challenge/safe-example-submission-custom-env">Example on including a custom environment in your model repo</a></li>
-</ul>
-<h2 id="-evaluation">🔍 Evaluation</h2>
-<p>All submissions will be evalulated using balanced accuracy. Balanced accuracy is defined as an average of true positive rate and true negative rate. </p>
-<p>The competition page will maintain a public leaderboard and a private leaderboard. The data will be devided along the sources such that public leaderboard will be a subset of the private leaderboard. Public leaderboard will also show error rates for every source, However, the specific source name will be anonymized. For example, public leaderboard will show scores for 4 sources while the private leaderboard will be score on additional 4 sources for 8 sources total. See the following table as an example.</p>
-<p><img width="1572" alt="image" src="https://github.com/user-attachments/assets/ec4339ef-589b-4f76-ae2f-a03a6ed6d7d3" /></p>
-<ul>
-<li>After the competition closes, we will provide additional metrics broken down by source and other data attributes.</li>
-<li>This is why we ask you to provide a continous decision score for every input example in addition to a hard binary decision.</li>
-</ul>
-<h2 id="-rules">⚖️ Rules</h2>
-<p>To ensure a fair and rigorous evaluation process for the SAFE: Synthetic Audio Forensics Evaluation Challenge (SAFE), the following rules must be adhered to by all participants:</p>
-<ol>
-<li><p><strong>Leaderboard</strong>:</p>
-<ul>
-<li>The competition will maintain both a public and a private leaderboard.</li>
-<li>The public leaderboard will show error rates for each anonymized source.</li>
-<li>The private leaderboard will be used for the final evaluation and will include non-overlapping data from the public leaderboard.</li>
-</ul>
-</li>
-<li><p><strong>Submission Limits</strong>:</p>
-<ul>
-<li>Participants will be limited in submissions per day.</li>
-</ul>
-</li>
-<li><p><strong>Confidentiality</strong>:</p>
-<ul>
-<li>Participants agree not to publicly compare their results with those of other participants until the other participant’s results are published outside of the IH&amp;MMSEC2025 venue.</li>
-<li>Participants are free to use and publish their own results independently.</li>
-</ul>
-</li>
-<li><p><strong>Compliance</strong>:</p>
-<ul>
-<li>Participants must comply with all rules and guidelines provided by the organizers.</li>
-<li>Failure to comply with the rules may result in disqualification from the competition and exclusion from future evaluations.</li>
-</ul>
-</li>
-</ol>
-<p>By participating in the SAFE challenge, you agree to adhere to these evaluation rules and contribute to the collaborative effort to advance the field of audio forensics.</p>
+  <script>
+    fetch('docs/barkopedia.md')
+      .then(res => res.text())
+      .then(md => {
+        document.getElementById('markdown-content').innerHTML = marked.parse(md);
+      })
+      .catch(err => {
+        document.getElementById('markdown-content').innerHTML = 'Failed to load Barkopedia.';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
