@@ -71,8 +71,8 @@ The competition includes six core tasks. The first five involve classifying dog 
 - **Task 4 (✅ Open):** Dog Emotion Classification  
   [SAFEChallengeTask2](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2)
 
-- **Task 5 (✅ Open):** Dog Vocal Separation (DVS)  
-  [Barkopedia-Task5-Dog_Vocal_Separation](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask5DogVocalSeparation)
+- **Dog Vocal Separation (DVS): ✅ Open** \
+  [Barkopedia-Dog_Vocal_Separation](https://huggingface.co/spaces/ArlingtonCL2/Barkopedia-Dog_Vocal_Separation)
 
 - **Task 6 (✅ Open):** Dog Vocal Detection (DVD)  
   [SAFEChallengeTask2](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2)
