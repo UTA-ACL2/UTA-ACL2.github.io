@@ -58,22 +58,22 @@ For questions regarding paper submission, please contact: **acm.ihmmsec25@gmail.
 The competition includes six core tasks. The first five involve classifying dog barks by categories such as individual, breed, sex, environment, etc. The final task focuses on audio denoising to extract pure dog barks from noisy recordings. All tasks open simultaneously.
 
 - **Task 1 (✅ Open):** Dog Breed / Sex / Age Classification  
-  [SAFEChallengePractice](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask11DogAgeGroupClassification)
+  [BarkopediaTask11DogAgeGroupClassification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask11DogAgeGroupClassification)
 
 - **Task 2 (✅ Open):** Dog Individual Recognition  
-  [SAFEChallengeTask1](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask2IndividualDogRecognition)
+  [BarkopediaTask2IndividualDogRecognition](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask2IndividualDogRecognition)
 
 - **Task 3 (✅ Open):** Dog Activity & Environment Classification  
-  [SAFEChallengeTask2](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask3DogActivityEnvironmentClassification)
+  [BarkopediaTask3DogActivityEnvironmentClassification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask3DogActivityEnvironmentClassification)
 
 - **Task 4 (✅ Open):** Dog Emotion Classification  
-  [SAFEChallengeTask2](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask3DogActivityEnvironmentClassification)
+  [TODO](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask3DogActivityEnvironmentClassification)
 
 - **Dog Vocal Separation (DVS): ✅ Open** \
   [Barkopedia-Dog_Vocal_Separation](https://huggingface.co/spaces/ArlingtonCL2/Barkopedia-Dog_Vocal_Separation)
 
 - **Task 6 (✅ Open):** Dog Vocal Detection (DVD)  
-  [SAFEChallengeTask2](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2)
+  [TODO](https://huggingface.co/spaces/safe-challenge/SAFEChallengeTask2)
 
 ## 📈 Data
 
