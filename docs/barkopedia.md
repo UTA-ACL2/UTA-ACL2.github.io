@@ -36,7 +36,6 @@ Top-performing solutions may be eligible for research grants to support continue
 - Sign up: [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)
 - Contact us: uta.acl2@gmail.com
 - Open an issue: [GitHub Repo](https://github.com/uta-acl2/Barkopedia)
-- See submission instructions and [🆘 Helpful Stuff](#-helpful-stuff) for debugging examples.
 
 ## 📜 Important Dates
 
@@ -57,13 +56,13 @@ For questions regarding paper submission, please contact: **uta.acl2@gmail.com**
 The competition includes six core tasks. The first five involve classifying dog barks by categories such as individual, breed, sex, environment, etc. The final task focuses on audio denoising to extract pure dog barks from noisy recordings. All tasks open simultaneously.
 
 - **Task 1 (✅ Open):** Dog Breed / Sex / Age Classification  
-  [BarkopediaTask11DogAgeGroupClassification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask11DogAgeGroupClassification)
+  [Barkopedia Dog Age Group Classification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask11DogAgeGroupClassification)
 
 - **Task 2 (✅ Open):** Dog Individual Recognition  
-  [BarkopediaTask2IndividualDogRecognition](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask2IndividualDogRecognition)
+  [Barkopedia Individual Dog Recognition](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask2IndividualDogRecognition)
 
 - **Task 3 (✅ Open):** Dog Activity & Environment Classification  
-  [BarkopediaTask3DogActivityEnvironmentClassification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask3DogActivityEnvironmentClassification)
+  [Barkopedia Dog Activity&Environment Classification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask3DogActivityEnvironmentClassification)
 
 - **Task 4 (✅ Open):** Dog Emotion Classification  
   [TODO](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask3DogActivityEnvironmentClassification)
