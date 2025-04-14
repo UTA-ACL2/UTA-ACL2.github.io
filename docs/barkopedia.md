@@ -2,9 +2,6 @@
 
 <img src="../static/images/overall_banner.png" width="900px">
 
-**👉 All participants must register for the competition by completing this [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)**
-
-
 ## 📣 Updates
 
 **2025-04-15**  
@@ -16,7 +13,7 @@ Dogs use vocalizations to communicate intentions, emotions, and contextual cues.
 
 This challenge, hosted at [IJCAI 2025](https://2025.ijcai.org/), addresses these issues by providing a large-scale, diverse benchmark dataset of real-world dog vocalizations sourced from YouTube and Reddit. The competition includes eight tasks designed to promote research at the intersection of machine learning, audio/speech processing, and animal communication.
 
-The competition results, dataset, leaderboard, and result submissions are all hosted on Hugging Face. So if you don’t have a Hugging Face account yet, please register for one. Then sign up here to participate and stay informed: [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)
+The competition results, dataset, leaderboard, and result submissions are all hosted on Hugging Face. So if you don’t have a Hugging Face account yet, please register for one. Then sign up here to participate and stay informed: [Registration Form](https://forms.office.com/r/0ZmFjYnW2p)
 
 <!-- ## 🥇 Detailed Leaderboard
 [Public Leaderboard](https://safe-challenge-leaderboard-public.hf.space)
@@ -33,7 +30,7 @@ The competition results, dataset, leaderboard, and result submissions are all ho
 Top-performing solutions may be eligible for research grants to support continued development.
 
 **Registration is required to participate:**
-- Sign up: [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)
+- Sign up: [Registration Form](https://forms.office.com/r/0ZmFjYnW2p)
 - Contact us: uta.acl2@gmail.com
 - Open an issue: [GitHub Repo](https://github.com/uta-acl2/Barkopedia)
 
@@ -79,28 +76,5 @@ Each task includes a corresponding dataset with a dataset card available on its 
 
 ## 🤖 Result Submission
 
-This is a generic leaderboard-style competition. Participants submit `.csv` files with results, which are evaluated on a public test set.
+Please follow the instruction of each specific challenge in HuggingFace.
 
-### 🔘 Submit
-
-Once your result `.csv` file is ready:
-
-- Visit the submission space for the specific task  
-- Log in with your Hugging Face account  
-- If working in a team, submit under a shared account for consistency  
-- Upload your `.csv` file and click **Submit** 🎉  
-- Use the **same username** across all team submissions
-
-## 🆘 Helpful Stuff
-
-If your submission fails, errors will not be shown directly (private eval space). You can:
-- Open a GitHub issue or email us with your submission ID for log retrieval.
-- Test locally using the provided debug examples.
-
-## 🔍 Evaluation
-
-Evaluation metrics vary by task. See each task’s Hugging Face space for details.
-
-## ⚖️ Rules
-
-Rules and requirements are defined per task. Be sure to review the task-specific documentation.
