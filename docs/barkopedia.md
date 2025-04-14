@@ -19,7 +19,7 @@ Dogs use vocalizations to communicate intentions, emotions, and contextual cues.
 
 This challenge, hosted at [IJCAI 2025](https://2025.ijcai.org/), addresses these issues by providing a large-scale, diverse benchmark dataset of real-world dog vocalizations sourced from YouTube and Reddit. The competition includes eight tasks designed to promote research at the intersection of machine learning, audio/speech processing, and animal communication.
 
-Sign up here to participate and stay informed: [Google Form](https://forms.gle/5J8Yuh41Lv8GAF7w8)
+Sign up here to participate and stay informed: [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)
 
 <!-- ## 🥇 Detailed Leaderboard
 [Public Leaderboard](https://safe-challenge-leaderboard-public.hf.space)
@@ -36,8 +36,8 @@ Sign up here to participate and stay informed: [Google Form](https://forms.gle/5
 Top-performing solutions may be eligible for research grants to support continued development.
 
 **Registration is required to participate:**
-- Sign up: [Google Form](https://forms.gle/5J8Yuh41Lv8GAF7w8)
-- Contact us: tobedecided@gmail.com
+- Sign up: [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)
+- Contact us: uta.acl2@gmail.com
 - Open an issue: [GitHub Repo](https://github.com/uta-acl2/Barkopedia)
 - See submission instructions and [🆘 Helpful Stuff](#-helpful-stuff) for debugging examples.
 
