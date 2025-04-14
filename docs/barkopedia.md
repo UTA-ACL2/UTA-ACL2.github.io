@@ -1,12 +1,10 @@
 # Barkopedia: A Canine Vocalization Understanding Challenge <!-- omit from toc -->
 
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20-Hugging%20Face-yellow)](https://huggingface.co/safe-challenge)
-
 <img src="../static/images/overall_banner.png" width="900px">
 
-**👉 All participants must register for the competition by completing this [Google Form](https://forms.gle/5J8Yuh41Lv8GAF7w8)**
+**👉 All participants must register for the competition by completing this [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)**
 
-[📊 Overview](#-overview) • [🥇 Detailed Leaderboard](#-detailed-leaderboard) • [🏆 Prize](#-prize) • [📜 Paper Submission and Dates](#-paper-submission-and-dates) • [📝 Tasks](#-tasks) • [📈 Data](#-data) • [🤖 Model Submission](#-model-submission) • [📂 Create Model Repo](#-create-model-repo) • [🔘 Submit](#-submit) • [🆘 Helpful Stuff](#-helpful-stuff) • [🔍 Evaluation](#-evaluation) • [⚖️ Rules](#️-rules)
+[📊 Overview](#overview) • [🥇 Detailed Leaderboard](#-detailed-leaderboard) • [🏆 Prize](#-prize) • [📜 Paper Submission and Dates](#-paper-submission-and-dates) • [📝 Tasks](#-tasks) • [📈 Data](#-data) • [🤖 Model Submission](#-model-submission) • [📂 Create Model Repo](#-create-model-repo) • [🔘 Submit](#-submit) • [🆘 Helpful Stuff](#-helpful-stuff) • [🔍 Evaluation](#-evaluation) • [⚖️ Rules](#️-rules)
 
 ## 📣 Updates
 
