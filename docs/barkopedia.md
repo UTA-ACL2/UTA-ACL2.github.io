@@ -4,7 +4,6 @@
 
 **👉 All participants must register for the competition by completing this [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)**
 
-[📊 Overview](#overview) • [🥇 Detailed Leaderboard](#-detailed-leaderboard) • [🏆 Prize](#-prize) • [📜 Paper Submission and Dates](#-paper-submission-and-dates) • [📝 Tasks](#-tasks) • [📈 Data](#-data) • [🤖 Model Submission](#-model-submission) • [📂 Create Model Repo](#-create-model-repo) • [🔘 Submit](#-submit) • [🆘 Helpful Stuff](#-helpful-stuff) • [🔍 Evaluation](#-evaluation) • [⚖️ Rules](#️-rules)
 
 ## 📣 Updates
 
@@ -17,7 +16,7 @@ Dogs use vocalizations to communicate intentions, emotions, and contextual cues.
 
 This challenge, hosted at [IJCAI 2025](https://2025.ijcai.org/), addresses these issues by providing a large-scale, diverse benchmark dataset of real-world dog vocalizations sourced from YouTube and Reddit. The competition includes eight tasks designed to promote research at the intersection of machine learning, audio/speech processing, and animal communication.
 
-Sign up here to participate and stay informed: [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)
+The competition results, dataset, leaderboard, and result submissions are all hosted on Hugging Face. So if you don’t have a Hugging Face account yet, please register for one. Then sign up here to participate and stay informed: [Microsoft Form](https://forms.office.com/r/0ZmFjYnW2p)
 
 <!-- ## 🥇 Detailed Leaderboard
 [Public Leaderboard](https://safe-challenge-leaderboard-public.hf.space)
@@ -51,7 +50,7 @@ Top-performing solutions may be eligible for research grants to support continue
 - **08/30/2025:** Final results and winner announcement  
 - **09/15/2025:** Presentation of winning solutions at IJCAI 2025
 
-For questions regarding paper submission, please contact: **acm.ihmmsec25@gmail.com**
+For questions regarding paper submission, please contact: **uta.acl2@gmail.com**
 
 ## 📝 Tasks
 
