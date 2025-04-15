@@ -31,7 +31,7 @@ Top-performing solutions may be eligible for research grants to support continue
 
 **Registration is required to participate:**
 - Sign up: [Registration Form](https://forms.office.com/r/0ZmFjYnW2p)
-- Contact us: uta.acl2@gmail.com
+- Contact us: uta.acl2@gmail.com (please include Barkopedia in the subject line)
 - Open an issue: [GitHub Repo](https://github.com/uta-acl2/Barkopedia)
 
 ## 📜 Important Dates
@@ -46,7 +46,8 @@ Top-performing solutions may be eligible for research grants to support continue
 - **08/30/2025:** Final results and winner announcement  
 - **09/15/2025:** Presentation of winning solutions at IJCAI 2025
 
-For questions regarding paper submission, please contact: **uta.acl2@gmail.com**
+For questions regarding paper submission, please contact: **uta.acl2@gmail.com** (with Barkopedia
+in the subject line)
 
 ## 📝 Tasks
 
