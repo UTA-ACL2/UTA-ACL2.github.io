@@ -51,7 +51,8 @@ in the subject line)
 
 ## 📝 Tasks
 
-The competition includes six core tasks. The first five involve classifying dog barks by categories such as individual, breed, sex, environment, etc. The final task focuses on audio denoising to extract pure dog barks from noisy recordings. All tasks open simultaneously.
+The competition includes eight tasks. The first six involve classifying dog vocalization by categories such as individual, breed, sex, age, environment, etc. The last two tasks focuses on audio denoising to extract clean dog barks from noisy recordings (either as a sound source separation or sound event
+detection task). All tasks are open simultaneously.
 
 - **Task 1 (✅ Open):** Dog Age Group Classification  
   [Barkopedia Dog Age Group Classification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaTask11DogAgeGroupClassification)
