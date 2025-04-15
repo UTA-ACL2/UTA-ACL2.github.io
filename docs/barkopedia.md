@@ -46,7 +46,7 @@ Top-performing solutions may be eligible for research grants to support continue
 - **08/30/2025:** Final results and winner announcement  
 - **09/15/2025:** Presentation of winning solutions at IJCAI 2025
 
-For questions regarding paper submission, please contact: **uta.acl2@gmail.com** (with Barkopedia
+For questions regarding this challenge, please contact: **uta.acl2@gmail.com** (with Barkopedia
 in the subject line)
 
 ## 📝 Tasks
