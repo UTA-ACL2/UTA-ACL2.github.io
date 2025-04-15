@@ -70,7 +70,7 @@ The competition includes six core tasks. The first five involve classifying dog 
 - **Task 6 (✅ Open):** Dog Emotion Classification  
   [Barkopedia Dog Emotion Classification](https://huggingface.co/spaces/ArlingtonCL2/BarkopediaDogEmotionClassification)
 
-- **Task 7 (✅ Open):** Dog Vocal Separation (DVS):
+- **Task 7 (✅ Open):** Dog Vocal Separation (DVS)  
   [Barkopedia-Dog_Vocal_Separation](https://huggingface.co/spaces/ArlingtonCL2/Barkopedia-Dog_Vocal_Separation)
 
 - **Task 8 (✅ Open):** Dog Vocal Detection (DVD)  
