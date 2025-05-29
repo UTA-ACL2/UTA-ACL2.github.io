@@ -1,2 +1,104 @@
-<html>
-</html>
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Cat Communication Research Study</title>
+    <link rel="stylesheet" href="/Welcome/assets/css/style.css?v=8e586bcdfd14798e55d7a22f4318938d255fadee">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="/Welcome/assets/js/main.js"></script>
+    <style>
+      
+      .cat-images {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .cat-images img {
+        width: 180px;
+        height: auto;
+        max-width: 100%; 
+      }
+
+      main {
+        margin-bottom: 50px; /* Prevents footer from overlapping content */
+      }
+
+      @media (max-width: 768px) {
+        .cat-images {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cat-images img {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+
+        main {
+          padding: 10px;
+        }
+      }
+
+      footer {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      h2, h3 {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Welcome</h1>
+    </header>
+
+    <!-- Image gallery for cats -->
+    <div class="cat-images">
+      <img src="images/Cat_1.jpg" alt="A cute cat lying down with a collar and bell" loading="lazy">
+      <img src="images/Cat_2.jpg" alt="Two affectionate cats nuzzling each other" loading="lazy">
+      <img src="images/Cat_3.jpg" alt="A cat and a person cuddling together" loading="lazy">
+    </div>
+
+    <div class="wrapper">
+      <main>
+        <section>
+          <h2 id="welcome">Welcome, Cat Lovers!</h2>
+          <p>Hello, I’m Lindsay, a student at The University of Texas at Arlington (UTA) working on a research paper about cat communication. My goal is to understand how cats interact with people and other cats, which could help improve animal welfare and enhance our relationship with cats.</p>
+
+          <p>This research could contribute to improving cat owners’ understanding of their cats’ needs, and it might also shed light on broader questions about animal communication. I’m working with Prof. <a href="http://www.cs.sjtu.edu.cn/~kzhu/">Kenny Zhu</a> on this study.</p>
+
+          <h3>How You Can Help</h3>
+          <p>We are seeking households with at least two cats to participate in a 30-day audio recording study. Lightweight audio recorders will be attached to the cats' collars to record their vocalizations. For privacy, the software will filter out human speech, and any sensitive material will be discarded.</p>
+
+          <p>If you're concerned about your cats' comfort, rest assured the collars and recorders have been designed to be as lightweight and unobtrusive as possible. Participants will receive $200 for their time and effort, which can go towards cat toys, food, or anything else for your furry friends!</p>
+
+          <h3>Sign Up or Ask Questions</h3>
+          <p>If you'd like to participate or have any questions, please email me at <a href="mailto:lxp7047@mavs.uta.edu" title="Email Lindsay to participate in the cat communication study">lxp7047@mavs.uta.edu</a>. I'll provide more details once you're on the list.</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Thank you for your interest in our research!</p>
+      </footer>
+    </div>
+
+  </body>
+</html>  
+
