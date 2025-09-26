@@ -95,9 +95,10 @@
         margin-bottom: 2em;
       }
       
-      .textmate-links {
+      .panel a.textmate-links {
         display: inline;
         margin-right: 0.5em;
+        margin-bottom: 0;
       }
       
       .guava-links {
@@ -107,6 +108,12 @@
       .guava-links span {
         margin: 0 0.5em;
         color: #666;
+      }
+      
+      .inline-links a {
+        display: inline;
+        margin-right: 0.5em;
+        margin-bottom: 0;
       }
     </style>
   </head>
@@ -278,23 +285,17 @@
                   <h5>Dataset Scanner</h5>
                 </a>
                 <p>A web-based tool to scan and visualize various datasets.</p>
-              </div>
-              
-              <div class="panel">
+                
                 <a href="http://10.33.48.248/praat/">
                   <h5>GUAVA</h5>
                 </a>
                 <p>A tool for visualizing and analyzing multimodal data.</p>
-              </div>
-              
-              <div class="panel">
+                
                 <a href="http://10.33.48.248/bark-scen/">
                   <h5>Canine "word"-environment Label Correlation Checker</h5>
                 </a>
                 <p>A demo for analyzing the correlation between canine vocalizations and their environments.</p>
-              </div>
-              
-              <div class="panel">
+                
                 <a href="http://10.33.48.248/canine-phone/">
                   <h5>Canine Phoneme Analysis (Coming Soon)</h5>
                 </a>
@@ -405,7 +406,7 @@
                 
                 <h5>GUAVA</h5>
                 <p>A web-based multimodal annotation tool for acoustic and video data.</p>
-                <div class="guava-links">
+                <div class="inline-links">
                   <a href="http://10.33.48.248/praat" target="_blank" rel="noopener" title="Requires UTA network or VPN">Demo</a>
                   <span>|</span>
                   <a href="https://github.com/UTA-ACL2/GUAVA" target="_blank" rel="noopener">GitHub</a>
@@ -451,7 +452,7 @@
                 <a href="http://www.aosabook.org/en">
                   <h5>The Architecture of Open Source Applications</h5>
                 </a>
-                <p>(<a href="http://www.ituring.com.cn/minibook/19">Chinese translation</a>)</p>
+                <p><a href="http://www.ituring.com.cn/minibook/19">(Chinese translation)</a></p>
                 
                 <a href="http://macournoyer.com/blog/2008/12/09/orange/">
                   <h5>Build your own compiler in Ruby with LLVM</h5>
