@@ -1,632 +1,775 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
-    <!--<![endif]-->
-    <head>
-        <meta charset="utf-8"/>
-        <!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width"/>
-        <title>ACL2 Research </title>
-        <!-- Included CSS Files (Uncompressed) -->
-        <!--
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    <title>ACL2 Research</title>
+    <!-- Included CSS Files (Uncompressed) -->
+    <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
   -->
-        <!-- Included CSS Files (Compressed) -->
-        <link rel="stylesheet" href="static/css/foundation.min.css">
-        <link rel="stylesheet" href="static/css/app.css">
-        <script src="javascripts/modernizr.foundation.js"></script>
-        <style>
-            .many-txt {
-                overflow : hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-            }
+    <!-- Included CSS Files (Compressed) -->
+    <link rel="stylesheet" href="static/css/foundation.min.css" />
+    <link rel="stylesheet" href="static/css/app.css" />
+    <script src="javascripts/modernizr.foundation.js"></script>
+    <style>
+      .many-txt {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
 
-            .all-txt {
-                overflow : hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 100;
-                -webkit-box-orient: vertical;
-            }
-            .responsive-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            
-            @media (max-width: 768px) {
-                .responsive-container {
-                    flex-direction: column;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="top-bar fixed"  >
-            <ul>
-                <li class="name">
-                    <h1><a href="index.html">Home</a></h1>
-                </li>
+      .all-txt {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 100;
+        -webkit-box-orient: vertical;
+      }
+      .responsive-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @media (max-width: 768px) {
+        .responsive-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="top-bar fixed">
+      <ul>
+        <li class="name">
+          <h1><a href="index.html">Home</a></h1>
+        </li>
+      </ul>
+      <section>
+        <ul class="left">
+          <li class="active"><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="resourse.html">Resources and Links</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#">Links</a>
+            <ul class="dropdown">
+              <li>
+                <a href="https://www.uta.edu/"
+                  >University of Texas at Arlington</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse"
+                  >Computer Science and Engineering Department</a
+                >
+              </li>
             </ul>
-            <section>
-                <ul class="left">
-                    <li class="active"><a href="research.html">Research</a></li>
-                    <li><a href="people.html">People</a></li>
-                    <li><a href="resourse.html">Resources and Links</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                <ul class="right">
-                    <li class="has-dropdown">
-                        <a href="#">Links</a>
-                        <ul class="dropdown">
-                            <li><a href="https://www.uta.edu/">University of Texas at Arlington</a></li>
-                            <li><a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse">Computer Science and Engineering Department</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </nav>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!-- End Navigation -->
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- End Navigation -->
+    <div class="row">
+      <div class="responsive-container">
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="static/images/acl2_logo_01.png" style="height: 50px" />
+        </div>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <p class="pageHeading">Research</p>
+        </div>
+        <div></div>
+      </div>
+
+      <div class="three panel columns">
+        <img src="static/images/UTA.jpg" />
+        <hr />
+        <ul>
+          <li>
+            <a href="#al">Animal Language Processing</a>
+          </li>
+          <li>
+            <a href="#mh">NLP for Mental Health</a>
+          </li>
+          <li>
+            <a href="#lw">Light-weight NLP</a>
+          </li>
+          <li>
+            <a href="#pp">Previous Projects</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nine columns">
+        <div class="panel">
+          <h4 id="al">Animal Language Processing</h4>
+        </div>
         <div class="row">
-            <div class="responsive-container">
-                <div style="display: flex; justify-content:center; align-items:center;">
-                    <img src="static/images/acl2_logo_01.png" style="height: 50px;"/>
-                </div>
-                <div style="display: flex; justify-content:center; align-items:center;">
-                    <p class="pageHeading">Research</p>
-
-                </div>
-                <div></div>
-            </div>
-
-            <div class="three panel columns">
-                <img src="static/images/UTA.jpg"/>
-                <hr>
-                <ul>
-                    <li>
-                        <a href="#al">Animal Language Processing</a>
-                    </li>
-                    <li>
-                        <a href="#mh">NLP for Mental Health</a>
-                    </li>
-                    <li>
-                        <a href="#lw">Light-weight NLP</a>
-                    </li>
-                    <li>
-                        <a href="#pp">Previous Projects</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nine columns">
-                <div class="panel">
-                    <h4 id="al">Animal Language Processing</h4>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                        <script>
-                            ProjList = [
-            {
-            web: "https://github.com/Lekhak123/A-Data-driven-Approach-to-the-Longitudinal-Study-of-Canine-Vocal-Pattern-Development",
-            title: "A Data-driven Approach to the Longitudinal Study of Canine Vocal Pattern Development",
-            abs: "Longitudinal studies of animal vocalizations provide crucial insights into developmental patterns and communicative evolution. To aid such investigations in canines, this paper introduces the Canine Age Transition Vocalization Dataset, a large-scale collection of dog vocalizations featuring meticulously verified metadata (including precise birthdate, breed, and individual dog ID) for 125 dogs across 6 common breeds. Our in-depth longitudinal analysis of this dataset then reveals novel findings on how key vocal parameters, encompassing defined bark types and finer-grained acoustic components (Elemental Dog Bark Units, or EDBUs), change as dogs mature. This work, therefore, offers both a significant new resource and foundational data that enable deeper, more nuanced investigations into the lifelong vocal development of dogs and other animal communication.",
-            link: "https://kenzhu2000.github.io/papers/acmmm25-doglong.pdf",
-            code: "https://github.com/Lekhak123/A-Data-driven-Approach-to-the-Longitudinal-Study-of-Canine-Vocal-Pattern-Development",
-            data: "https://github.com/Lekhak123/A-Data-driven-Approach-to-the-Longitudinal-Study-of-Canine-Vocal-Pattern-Development",
-            cite: "Hridayesh Lekhak, Tuan Minh Dang, Theron S. Wang, Kenny Q. Zhu. A Data-driven Approach to the Longitudinal Study of Canine Vocal Pattern Development. In the Proceedings of ACM Multimedia 2025 (Brave New Ideas)"
-            },
-            {
-            web: "https://github.com/Lekhak123/DogSpeak-A-Canine-Vocalization-Classification-Dataset",
-            title: "DogSpeak: A Canine Vocalization Classification Dataset",
-            abs: "Progress in understanding real-world canine vocal communication is constrained by datasets lacking scale and 'in-the-wild' diversity. We introduce DogSpeak, a large-scale public dataset of 77,202 Barkseqs (33.162 hours) from 156 dogs (5 breeds), uniquely sourced from online social media with accurate dog ID, sex, and breed labels. DogSpeak, one of the largest of its kind, addresses prior limitations. Benchmark tasks (sex, breed, individual dog recognition) demonstrate its utility and highlight how its inherent real-world challenges necessitate and foster research into more robust bioacoustic models, preprocessing, and feature representation.",
-            link: "https://kenzhu2000.github.io/papers/acmmm25-dogspeak.pdf",
-            code: "https://github.com/Lekhak123/DogSpeak-A-Canine-Vocalization-Classification-Dataset",
-            data: "https://github.com/Lekhak123/DogSpeak-A-Canine-Vocalization-Classification-Dataset",
-            cite: "Hridayesh Lekhak, Theron S. Wang, Tuan Minh Dang, Kenny Q. Zhu. DogSpeak: A Canine Vocalization Classification Dataset. In the Proceedings of ACM Multimedia 2025 (Datasets Track)"
-            },
-			{
-            web: "https://github.com/tmdang1101/EmotionalCanines",
-            title: "EmotionalCanines: A Dataset for Analysis of Arousal and Valence in Dog Vocalization",
-            abs: "This study centers on the creation of a novel dog bark emotion dataset, EmotionalCanines, capturing the emotional spectrum of canine vocalizations. In the current literature on animal communication and its intersection with machine learning, there is a limited amount of open-sourced data available to facilitate research, mainly due to constraints in animal subjects and recording conditions. To address this gap, we propose a framework that enables the collection of reliable arousal and valence labels in animal emotional state at scale. Through its application, we built a dataset of 1,400 dog bark sequences with corresponding arousal and valence labels, the largest of its kind, for the Husky and Shiba Inu dog breeds. By constructing this dataset, we provide a foundation for decoding dog bark patterns and advancing animal communication research.",
-            link: "https://kenzhu2000.github.io/papers/acmmm25-dogemo.pdf",
-            code: "https://github.com/tmdang1101/EmotionalCanines",
-            data: "https://github.com/tmdang1101/EmotionalCanines",
-            cite: "Tuan Minh Dang, Theron S. Wang, Hridayesh Lekhak, Kenny Q. Zhu. EmotionalCanines: A Dataset for Analysis of Arousal and Valence in Dog Vocalization. In the Proceedings of ACM Multimedia 2025 (Datasets Track)"
-            },
-			{
-            web: "https://github.com/fispresent/dog2vec",
-            title: "Dog2vec: Self-Supervised Pre-Training for Canine Vocal Representation",
-            abs: "Previous generalized biological voice models were trained on large amounts of data from multiple species. However, on average, there is very little training data on species-specific voices, while large differences between the vocalizations of species may even be a barrier to encoding vocal features. This leads to potentially large errors in using generic models for species-specific vocalization studies. We collected over 6000 hours of dog barking videos and presented the first animal-specific bioacoustic embedding model, Dog2vec1 . The results indicate that Dog2vec outperforms species-independent pre-trained models and achieves state-of-the-art results on a series of dog-related tasks, including dog bark type recognition and dog sound event detection, and obtain a relative 8.2% performance increase.",
-            link: "https://www.isca-archive.org/interspeech_2025/li25o_interspeech.pdf",
-            code: "https://github.com/fispresent/dog2vec",
-            data: "https://github.com/fispresent/dog2vec",
-            cite: "Xingyuan Li, Kenny Q. Zhu, and Mengyue Wu. Dog2vec: Self-Supervised Pre-Training for Canine Vocal Representation. In Proc. Interspeech 2025, pp. 1698-1702. 2025."
-            },
-			{
-			web: "https://aclanthology.org/2025.acl-long.451/",
-            title: "Toward Automatic Discovery of a Canine Phonetic Alphabet (ACL 2025 Outstanding Paper Award)",
-            abs: "Dogs communicate intelligently but little is known about the phonetic properties of their vocalization communication. For the first time, this paper presents an iterative algorithm inspired by human phonetic discovery, which is based on minimal pairs that determine phonemes by distinguishing different words in human language, and is able to produce a complete alphabet of distinct canine phoneme-like units. In addition, the algorithm produces a number of canine repeated acoustic units, which may correspond to specific environments and activities of a dog, composed exclusively of the canine phoneme-like units in the alphabet. The framework outlined in this paper is expected to function not only on canines but other animal species.",
-            link: "https://aclanthology.org/2025.acl-long.451/",
-            code: "https://aclanthology.org/2025.acl-long.451/",
-            data: "https://aclanthology.org/2025.acl-long.451/",
-            cite: "Theron S. Wang, Xingyuan Li, Hridayesh Lekhak, Tuan Minh Dang, Mengyue Wu, and Kenny Q. Zhu. 2025. Toward Automatic Discovery of a Canine Phonetic Alphabet. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 9207–9219, Vienna, Austria. Association for Computational Linguistics."
-            },
-            {
-            web: "https://github.com/UTA-ACL2/canineLexical",
-            title: "Phonetic and Lexical Discovery of Canine Vocalization",
-            abs: "This paper attempts to discover communication patterns automatically within dog vocalizations using a data-driven approach, which breaks the barrier that exists in previous methods that heavily rely on human prior knowledge of limited data. We present a self-supervised approach with HuBERT, enabling the accurate classification of phones, and an adaptive grammar induction method that identifies phone sequence patterns suggesting a preliminary vocabulary within dog vocalizations. Our results show that a subset of this vocabulary has substantial causal relations with certain canine activities, suggesting signs of stable semantics associated with these words.",
-            link: "https://kenzhu2000.github.io/papers/emnlp24-dog.pdf",
-            code: "https://github.com/UTA-ACL2/canineLexical",
-            data: "https://github.com/UTA-ACL2/canineLexical",
-            cite: "Theron S. Wang, Xingyuan Li, Chunhao Zhang, Mengyue Wu, Kenny Q. Zhu. Phonetic and Lexical Discovery of Canine Vocalization. In the Findings of EMNLP 2024."
-            },
-
-            {
-            web: "https://arxiv.org/abs/2402.15985",
-            title: "Phonetic and Lexical Discovery of a Canine Language using HuBERT",
-            abs: "This paper delves into the pioneering exploration of potential communication patterns within dog vocalizations and transcends traditional linguistic analysis barriers, which heavily relies on human priori knowledge on limited datasets to find sound units in dog vocalization. We present a self-supervised approach with HuBERT, enabling the accurate classification of phoneme labels and the identification of vocal patterns that suggest a rudimentary vocabulary within dog vocalizations. Our findings indicate a significant acoustic consistency in these identified canine vocabulary, covering the entirety of observed dog vocalization sequences. We further develop a web-based dog vocalization labeling system. This system can highlight phoneme n-grams, present in the vocabulary, in the dog audio uploaded by users.",
-            link: "https://arxiv.org/abs/2402.15985",
-            code: "",
-            data: "",
-            cite: "Li, Xingyuan, Sinong Wang, Zeyu Xie, Mengyue Wu, and Kenny Q. Zhu. Phonetic and Lexical Discovery of a Canine Language using HuBERT. arXiv preprint arXiv:2402.15985 2024."
-            },
-            {
-				web: "https://arxiv.org/abs/2309.13086",
-				title: "Towards Lexical Analysis of Dog Vocalizations via Online Videos",
-				abs: "Deciphering the semantics of animal language has been a grand challenge. This study presents a data-driven investigation into the semantics of dog vocalizations via correlating different sound types with consistent semantics. We first present a new dataset of Shiba Inu sounds, along with contextual information such as location and activity, collected from YouTube with a well-constructed pipeline. The framework is also applicable to other animal species. Based on the analysis of conditioned probability between dog vocalizations and corresponding location and activity, we discover supporting evidence for previous heuristic research on the semantic meaning of various dog sounds. For instance, growls can signify interactions. Furthermore, our study yields new insights that existing word types can be subdivided into finer-grained subtypes and minimal semantic unit for Shiba Inu is word-related. For example, whimper can be subdivided into two types, attention-seeking and discomfort.",
-				link: "https://arxiv.org/pdf/2309.13086",
-				code: "",
-				data: "",
-				cite: "Yufei Wang, Chunhao Zhang, Jieyi Huang, Mengyue Wu, Kenny Zhu. Towards Lexical Analysis of Dog Vocalizations via Online Videos. ArXiv preprint arXiv:2309.13086. 2023."
-				},
-				{
-				web: "https://arxiv.org/abs/2309.13085",
-				title: "Does My Dog''Speak''Like Me? The Acoustic Correlation between Pet Dogs and Their Human Owners",
-				abs: "How hosts language influence their pets' vocalization is an interesting yet underexplored problem. This paper presents a preliminary investigation into the possible correlation between domestic dog vocal expressions and their human host's language environment. We first present a new dataset of Shiba Inu dog vocals from YouTube, which provides 7500 clean sound clips, including their contextual information of these vocals and their owner's speech clips with a carefully-designed data processing pipeline. The contextual information includes the scene category in which the vocal was recorded, the dog's location and activity. With a classification task and prominent factor analysis, we discover significant acoustic differences in the dog vocals from the two language environments. We further identify some acoustic features from dog vocalizations that are potentially correlated to their host language patterns.",
-				link: "https://arxiv.org/abs/2309.13085",
-				code: "https://anonymous.4open.science/r/EJSHIBAVOICE-0DC5",
-				data: "https://anonymous.4open.science/r/EJSHIBAVOICE-0DC5",
-				cite: "Jieyi Huang, Chunhao Zhang, Yufei Wang, Mengyue Wu, Kenny Zhu. ArXiv reprint arXiv:2309.13085. 2023."
- 
-			},
-				{
-				web: "https://github.com/XSiling/ShibaScript",
-                                title: "Transcribing Vocal Communications of Domestic Shiba lnu Dogs",
-                                abs: "How animals communicate and whether they have languages is a persistent curiosity of human beings. However, the study of animal communications has been largely restricted to data from field recordings or in a controlled environment, which is expensive and limited in scale and variety. In this paper, we take domestic Shiba Inu dogs as an example and extract their vocal communications from a large amount of YouTube videos of Shiba Inu dogs. We classify these clips into different scenarios and locations, and further transcribe the audio into phonetically symbolic scripts through a systematic process. We discover consistent phonetic symbols among their expressions, which indicates that Shiba Inu dogs can have systematic verbal communication patterns. This reusable framework produces the first-of-its-kind Shiba Inu vocal communication dataset that will be valuable to future research in both zoology and linguistics.",
-                                link: "https://aclanthology.org/2023.findings-acl.869/",
-                                code: "https://github.com/XSiling/ShibaScript",
-                                data: "https://github.com/XSiling/ShibaScript",
-                                cite: 'Jieyi Huang, Chunhao Zhang, Mengyue Wu, and Kenny Q. Zhu. 2023. Transcribing Vocal Communications of Domestic Shiba lnu Dogs. In Findings of the Association for Computational Linguistics: ACL 2023, pages 13819–13832.'
-                            },
-]
-                            for (i = 0; i < ProjList.length; i++) {
-                                paper = ProjList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                // document.write('<nobr>')
-                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
-                                // document.write()
-                                // document.write('</nobr>')
-                                // document.write('<button type="button">Show All</button><br>')
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                    </div>
-                </div>
-
-
-
-                <div class="panel">
-                    <h4 id="mh">NLP for Mental Health</h4>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                    <script>
-                            ProjList = [
-{
-                                web: "",
-                                title: "Mapping Long-term Causalities in Psychiatric Symptomatology and Life Events from Social Media",
-                                abs: "Social media is a valuable data source for exploring mental health issues. However, previous studies have predominantly focused on the semantic content of these posts, overlooking the importance of their temporal attributes, as well as the evolving nature of mental disorders and symptoms. In this paper, we study the causality between psychiatric symptoms and life events, as well as among different symptoms from social media posts, which leads to better understanding of the underlying mechanisms of mental disorders. By applying these extracted causality features to tasks such as diagnosis point detection and early risk detection of depression, we notice considerable performance enhancement. This indicates that causality information extracted from social media data can boost the efficacy of mental disorder diagnosis and treatment planning.",
-                                link: "https://kenzhu2000.github.io/papers/naacl24-causal.pdf",
-                                code: "",
-                                data: "",
-                                cite: 'Chen, Siyuan, et al. "Mapping Long-term Causalities in Psychiatric Symptomatology and Life Events from Social Media." Proceedings of the 2024 Conference of the <i>North American Chapter of the Association for Computational Linguistics</i>: Human Language Technologies (Volume 1: Long Papers). 2024'
-                            },
-{
-                                web: "",
-                                title: "Detection of Multiple Mental Disorders from Social Media with Two-Stream Psychiatric Experts",
-                                abs: "Existing Mental Disease Detection (MDD) research largely studies the detection of a single disorder, overlooking the fact that mental diseases might occur in tandem. Many approaches are not backed by domain knowledge (e.g., psychiatric symptoms) and thus fail to produce interpretable results. To tackle these issues, we propose an MDD framework that is capable of learning the shared clues of all diseases, while also capturing the specificity of each single disease. The two-stream architecture which simultaneously processes text and symptom features can combine the strength of both modalities and offer knowledge-based explainability. Experiments on the detection of 7 diseases show that our model can boost detection performance by more than 10%, especially in relatively rare classes.",
-                                link: "https://kenzhu2000.github.io/papers/emnlp23-psyex.pdf",
-                                code: "https://github.com/chesiy/EMNLP23-PsyEx",
-                                data: "",
-                                cite: 'Siyuan Chen*, Zhiling Zhang*, Mengyue Wu and Kenny Q. Zhu. Detection of Multiple Mental Disorders from Social Media with Two-Stream Psychiatric Experts. In the Proceedings of <i>EMNLP 2023</i>.'
-                            },
-{
-                                web: "https://github.com/wsntxxn/BLAT",
-                                title: "BLAT: Bootstrapping Language-Audio Pre-training based on AudioSet Tag-guided Synthetic Data",
-                                abs: "Compared with ample visual-text pre-training research, few works explore audio-text pre-training, mostly due to the lack of sufficient Zelin Zhou Shanghai Jiao Tong University ze-lin@sjtu.edu.cn Mengyue Wu∗ Shanghai Jiao Tong University mengyuewu@sjtu.edu.cn multi-modal learning, contrastive learning, audio captioning, audio classification, zero-shot inference parallel audio-text data. Most existing methods incorporate the visual modalityasapivotforaudio-textpre-training,whichinevitably induces data noise. In this paper, we propose to utilize audio captioning to generate text directly from audio, without the aid of the visual modality so that potential noise from modality mismatch is eliminated. Furthermore, we propose caption generation under the guidance of AudioSet tags, leading to more accurate captions. With the above two improvements, we curate high-quality, large-scale parallel audio-text data, based on which we perform audio-text pre-training. We comprehensively demonstrate the performance of the pre-trained audio-text model on a series of downstream audio-related tasks, including single-modality tasks like audio classification and tagging, as well as cross-modal tasks consisting of audio-text retrieval and audio-based text generation. Experimental results indicate that our approach achieves state-of-the-art zeroshot classification performance on most datasets, suggesting the effectiveness of our synthetic data. The audio encoder also serves as an efficient pattern recognition model by fine-tuning it on audiorelated tasks. Synthetic data and pre-trained models are available online.",
-                                link: "https://kenzhu2000.github.io/papers/mm23-blat.pdf",
-                                code: "https://github.com/wsntxxn/BLAT",
-                                data: "https://zenodo.org/record/8192397",
-                                cite: 'Xuenan Xu, Zhiling Zhang, Zelin Zhou, Pingyue Zhang, Zeyu Xie, Mengyue Wu and Kenny Q. Zhu. BLAT: Bootstrapping Language-Audio Pre-training based on AudioSet Tag-guided Synthetic Data. In the Proceedings of <i>ACM Multimedia 2023</i>.'
-                            },
-				{
-                                web: "",
-                                title: "Symptom Identification for Interpretable Detection of Multiple Mental Disorders on Social Media",
-                                abs: "Mental disease detection (MDD) from social media has suffered from poor generalizability and interpretability, due to lack of symptom modeling. This paper introduces PsySym, the first annotated symptom identification corpus of multiple psychiatric disorders, to facilitate further research progress. PsySym is annotated according to a knowledge graph of the 38 symptom classes related to 7 mental diseases complied from established clinical manuals and scales, and a novel annotation framework for diversity and quality. Experiments show that symptom-assisted MDD enabled by PsySym can outperform strong pure-text baselines. We also exhibit the convincing MDD explanations provided by symptom predictions with case studies, and point to their further potential applications. ",
-                                link: "https://arxiv.org/abs/2205.11308",
-                                code: "https://github.com/blmoistawinde/EMNLP22-PsySym",
-                                data: "https://github.com/blmoistawinde/EMNLP22-PsySym",
-                                cite: 'Zhiling Zhang*, Siyuan Chen*, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>EMNLP 2022</i>.'
-                            }, {
-                                web: "",
-                                title: "Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression",
-                                abs: "Depression is a prominent health challenge to the world, and early risk detection (ERD) of depression from online posts can be a promising technique for combating the threat. Early depression detection faces the challenge of efficiently tackling streaming data, balancing the tradeoff between timeliness, accuracy and explainability. To tackle these challenges, we propose a psychiatric scale guided risky post screening method that can capture risky posts related to the dimensions defined in clinical depression scales, and providing interpretable diagnostic basis. A Hierarchical Attentional Network equipped with BERT (HAN-BERT) is proposed to further advance explainable predictions. For ERD, we propose an online algorithm based on an evolving queue of risky posts that can significantly reduce the number of model inferences to boost efficiency. Experiments show that our method outperforms the competitive feature-based and neural models under conventional depression detection settings, and achieves simultaneous improvement in both efficacy and efficiency for ERD.",
-                                link: "https://github.com/blmoistawinde/scale_early_depress_detect/blob/main/paper.pdf",
-                                code: "https://github.com/blmoistawinde/scale_early_depress_detect",
-                                data: "https://github.com/blmoistawinde/scale_early_depress_detect",
-                                cite: 'Zhiling Zhang, Siyuan Chen, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>IJCAI 2022</i>.'
-                            }
-]
-                            for (i = 0; i < ProjList.length; i++) {
-                                paper = ProjList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                // document.write('<nobr>')
-                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
-                                // document.write()
-                                // document.write('</nobr>')
-                                // document.write('<button type="button">Show All</button><br>')
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                    </div>
-                </div>
-
-
-                <div class="panel">
-                    <h4 id="lw">Light-weight NLP</h4>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                        <script>
-                            ProjList = [
-{
-                                web: "",
-                                title: "Low-Rank Prune-And-Factorize for Language Model Compression",
-                                abs: "The components underpinning PLMs—large weight matrices—were shown to bear considerable redundancy. Matrix factorization, a well-established technique from matrix theory, has been utilized to reduce the number of parameters in PLM. However, it fails to retain satisfactory performance under moderate to high compression rates. In this paper, we identify the full-rankness of fine-tuned PLM as the fundamental bottleneck for the failure of matrix factorization and explore the use of network pruning to extract low-rank sparsity pattern desirable to matrix factorization. We find such a low-rank sparsity pattern exclusively exists in models generated by first-order pruning, which motivates us to unite the two approaches and achieve more effective model compression. We further propose two techniques: sparsity-aware SVD and mixed-rank fine-tuning, which improve the initialization and training of the compression procedure, respectively. Experiments on GLUE and question-answering tasks show that the proposed method has a superior compression-performance trade-off compared to existing approaches.",
-                                link: "https://kenzhu2000.github.io/papers/coling24-lpaf.pdf",
-                                code: "",
-                                data: "",
-                                cite: 'Siyu Ren and Kenny Q. Zhu. Low-Rank Prune-And-Factorize for Language Model Compression. In the Proceedings of <i>COLING 2024</i>.'
-                            },
-{
-                                web: "",
-                                title:"EMO: Earth Mover Distance Optimization for Auto-regressive Language Modeling.",
-                                abs: "Neural language models are predominantly trained using maximum likelihood estimation (MLE), which is equivalent to minimizing the forward cross-entropy between the empirical data distribution and the model distribution. However, various degeneration phenomena are still widely observed when decoding from the distributions learned by such models. We establish that the forward cross-entropy is suboptimal as a distance metric for aligning human and model distribution due to its (1) recall-prioritization (2) negative diversity ignorance and (3) train-test mismatch. In this paper, we propose Earth Mover Distance Optimization (EMO) for auto-regressive language modeling. EMO capitalizes on the inherent properties of earth mover distance to address the aforementioned challenges. Due to the high complexity of direct computation, we further introduce a feasible upper bound for EMO to ease end-to-end training. Upon extensive evaluation, EMO demonstrates a consistently better language modeling performance than MLE across domains.  Moreover, EMO shows noteworthy enhancements in downstream performance with minimal fine-tuning on merely 25,000 sentences, highlighting its potential as a lightweight calibration method for enhancing large-scale pre-trained language models.",
-                                link: "https://github.com/DRSY/EMO",
-                                code: "https://github.com/DRSY/EMO",
-                                data: "",
-                                cite: 'Siyu Ren, Zhiyong Wu and Kenny Q. Zhu. EMO: Earth Mover Distance Optimization for Auto-regressive Language Modeling. In the Proceedings of <i>ICLR 2024</i>.'
-                            },
-{
-                                web: "",
-                                title: "Context Compression for Auto-regressive Transformers with Sentinel Tokens",
-                                abs: "The quadratic complexity of the attention module makes it gradually become the bulk of compute in Transformer-based LLMs during generation. Moreover, the excessive key-value cache that arises when dealing with long inputs also brings severe issues on memory footprint and inference latency. In this work, we propose a plug-and-play approach that is able to incrementally compress the intermediate activation of a specified span of tokens into compact ones, thereby reducing both memory and computational cost when processing subsequent context. Experiments on both in-domain language modeling and zero-shot open-ended document generation demonstrate the advantage of our approach over sparse attention baselines in terms of fluency, n-gram matching, and semantic similarity. At last, we comprehensively profile the benefit of context compression on improving the system throughout.",
-                                link: "https://github.com/DRSY/KV_Compression",
-                                code: "https://github.com/DRSY/KV_Compression",
-                                data: "https://github.com/DRSY/KV_Compression",
-                                cite: 'Siyu Ren, Qi Jia and Kenny Q. Zhu. Context Compression for Auto-regressive Transformers with Sentinel Tokens. In the Proceedings of <i>EMNLP 2023</i>ww.'
-                            },
-{
-                                web: "",
-                                title: "Pruning Pre-trained Language Models with Principled Importance and Self-regularization",
-                                abs: "Iterative pruning is one of the most effective compression methods for pre-trained language models. We discovered that finding the optimal pruning decision is an equalityconstrained 0-1 Integer Linear Programming problem. The solution to this optimization problem leads to a principled importance criterion which we use to rank parameters during iterative model pruning. To mitigate the poor generalization at high sparsity levels, we propose a self-regularization scheme where model prediction is regularized by the latest checkpoint with increasing sparsity throughout pruning. Our experiments on natural language understanding, question answering, named entity recognition, and datato-text generation with various Transformerbased PLMs show the effectiveness of the approach at various sparsity levels.", 
-				link: "https://github.com/DRSY/PINS",
-                                code: "https://github.com/DRSY/PINS",
-                                data: "",
-                                cite: 'Siyu Ren and Kenny Q. Zhu. Pruning Pre-trained Language Models with Principled Importance and Self-regularization. In the Findings of <i>ACL 2023</i>.'
-                            },
-			{
-                                web: "",
-                                title: "Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning",
-                                abs: "Pretrained masked language models (PLMs) were shown to be inheriting a considerable amount of relational knowledge from the source corpora. In this paper, we present an in-depth and comprehensive study concerning specializing PLMs into relational models from the perspective of network pruning. We show that it is possible to find subnetworks capable of representing grounded commonsense relations at non-trivial sparsity while being more generalizable than original PLMs in scenarios requiring knowledge of single or multiple commonsense relations.",
-                                link: "",
-                                code: "https://github.com/DRSY/LAMP",
-                                data: "https://github.com/DRSY/LAMP",
-                                cite: 'Siyu Ren and Kenny Q. Zhu. Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning. In the Proceedings of <i>Findings of NAACL 2022</i>.'
-                            }, {
-                                web: "",
-                                title: "Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval",
-                                abs: "Current text-image approaches (e.g., CLIP) typically adopt dual-encoder architecture us- ing pre-trained vision-language representation. However, these models still pose non-trivial memory requirements and substantial incremental indexing time, which makes them less practical on mobile devices. In this paper, we present an effective two-stage framework to compress large pre-trained dual-encoder for lightweight text-image retrieval. The resulting model is smaller (39% of the original), faster (1.6x/2.9x for processing image/text respectively), yet performs on par with or better than the original full model on Flickr30K and MSCOCO benchmarks. We also open-source an accompanying realistic mobile image search application.",
-                                link: "https://arxiv.org/abs/2204.13913",
-                                code: "https://github.com/DRSY/MoTIS",
-                                data: "https://github.com/DRSY/MoTIS",
-                                cite: 'Siyu Ren and Kenny Q. Zhu. Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval. In the Proceedings of <i>NAACL 2022</i>.'
-                            }
-]
-                            for (i = 0; i < ProjList.length; i++) {
-                                paper = ProjList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                // document.write('<nobr>')
-                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
-                                // document.write()
-                                // document.write('</nobr>')
-                                // document.write('<button type="button">Show All</button><br>')
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                    </div>
-                </div>
-
-
-                <div class="panel">
-                    <h4 id="pp">Previous Projects</h4>
-                </div>
-                <div class="row">
-                    <div class="twelve columns">
-                        <script>
-                            ProjList = [{
-                                web: "project_causal.html",
-                                title: "CausalNet: Causality Extraction and Reasoning",
-                                abs: "Causality can help for human reasoning and decision making. We extract casuality(cause-effect pairs) from web corpus and build a web-scale causality network (CausalNet). Backed by this network, we propose a framework for commonsense causal reasoning.",
-                                link: "http://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-copa.pdf",
-                                code: "https://github.com/cs-zyluo/CausalNet",
-                                data: "https://adapt.seiee.sjtu.edu.cn/causal/",
-                                cite: 'Zhiyi Luo, Yuchen Sha, Kenny Q. Zhu, Seung-won Hwang, Zhongyuan Wang, "Commonsense Causal Reasoning between Short Texts", Proc. of 15th Int. Conf. on Principles of Knowledge Representation and Reasonging (KR\'2016), Cape Town, South Africa.'
-                            }, {
-                                web: "https://shanshan437421.github.io/",
-                                title: "Enhanced Story Representation by ConceptNet for Predicting Story Endings",
-                                abs: "Predicting endings for narrative stories is a grand challenge for machine commonsense reasoning. The task requires accurate representation of the story semantics and structured logic knowledge. Pre-trained language models, such as BERT, made progress recently in this task by exploiting spurious statistical patterns in the test dataset, instead of “understanding” the stories per se. In this paper, we propose to improve the representation of stories by first simplifying the sentences to some key concepts and second modeling the latent relationship between the key ideas within the story. Such enhanced sentence representation, when used with pre-trained language models, makes substantial gains in prediction accuracy on the popular Story Cloze Test without utilizing the biased validation data.",
-                                link: "https://github.com/shanshan437421/Simplification/blob/master/paper.pdf",
-                                code: "https://github.com/shanshan437421/Simplification",
-                                data: "",
-                                cite: 'Shanshan Huang, Kenny Q. Zhu*, Qianzi Liao, Libin Shen and Yinggong Zhao. Enhanced Story Representation by ConceptNet for Predicting Story Endings. the Proceedings of <i>CIKM 2020.</i>'
-                            }, {
-                                web: "https://github.com/blmoistawinde/dgcn_tagging",
-                                title: "Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging",
-                                abs: "Audio tagging aims at predicting sound events occurred in a recording. Traditional models require enormous laborious annotations, otherwise performance degeneration will be the norm. Therefore, we investigate robust audio tagging models in low-resource scenarios with the enhancement of knowledge graphs. Besides existing ontological knowledge, we further propose a semi-automatic approach that can construct temporal knowledge graphs on diverse domain-specific label sets. Moreover, we leverage a variant of relation-aware graph neural network, D-GCN, to combine the strength of the two knowledge types. Experiments on AudioSet and SONYC urban sound tagging datasets suggest the effectiveness of the introduced temporal knowledge, and the advantage of the combined KGs with D-GCN over single knowledge source.",
-                                link: "https://arxiv.org/abs/2110.01009",
-                                code: "https://github.com/blmoistawinde/dgcn_tagging",
-                                data: "https://github.com/blmoistawinde/dgcn_tagging",
-                                cite: 'Zhiling Zhang, Zelin Zhou, Haifeng Tang, Guangwei Li, Mengyue Wu*, Kenny Q Zhu*. Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging. the Proceedings of <i>CIKM 2021.</i>'
-                            },
-				{ web: "https://yizhuliu.github.io/Welcome/",
-                                title: "Controlling Length in Abstractive Summarization Using a Convolutional Neural Network",
-                                abs: "Convolutional neural networks (CNNs) have met great success in abstractive summarization, but they cannot effectively generate summaries of desired lengths. Because generated summaries are used in difference scenarios which may have space or length constraints, the ability to control the summary length in abstractive summarization is an important problem. In this paper, we propose an approach to constrain the summary length by extending a convolutional sequence to sequence model. The results show that this approach generates high-quality summaries with user defined length, and outperforms the baselines consistently in terms of ROUGE score, length variations and semantic similarity.",
-                                link: "https://www.aclweb.org/anthology/D18-1444/",
-                                code: "https://github.com/YizhuLiu/sumlen",
-                                data: "https://drive.google.com/file/d/1KjzKYhpsIwBKiNZx5x-NiYQabumY3qkY/view",
-                                cite: "Yizhu Liu and Zhiyi Luo and Kenny Q. Zhu. Controlling Length in Abstractive Summarization Using a Convolutional Neural Network. In the Proceedings of <i>EMNLP 2018</i>"
-                            }, {
-                                web: "https://github.com/blmoistawinde/KPCNet",
-                                title: "Diverse and Specific Clarification Question Generation with Keywords",
-                                abs: "Product descriptions on e-commerce websites often suffer from missing important aspects. Clarification question generation (CQGen) can be a promising approach to help alleviate the problem. Unlike traditional QGen assuming the existence of answers in the context and generating questions accordingly, CQGen mimics user behaviors of asking for unstated information. The generated CQs can serve as a sanity check or proofreading to help e-commerce merchant to identify potential missing information before advertising their product, and improve consumer experience consequently. Due to the variety of possible user backgrounds and use cases, the information need can be quite diverse but also specific to a detailed topic, while previous works assume generating one CQ per context and the results tend to be generic. We thus propose the task of Diverse CQGen and also tackle the challenge of specificity.We propose a new model named KPCNet, which generates CQs with Keyword Prediction and Conditioning, to deal with the tasks. Automatic and human evaluation on 2 datasets (Home & Kitchen, Office) showed that KPCNet can generate more specific questions and promote better group-level diversity than several competing baselines.",
-                                link: "https://github.com/blmoistawinde/KPCNet/blob/main/paper.pdf",
-                                code: "https://github.com/blmoistawinde/KPCNet",
-                                data: "https://zenodo.org/record/4587504",
-                                cite: "Zhiling Zhang and Kenny Q. Zhu. Diverse and Specific Clarification Question Generation with Keywords. In Proceedings of <i>The Web Conference</i> 2021 (WWW '21)"
-                            }, {
-                                web: "https://github.com/Karlguo/paraphrase",
-                                title: "Automatic Paraphrasing via Sentence Reconstruction and Round-trip Translation",
-                                abs: "Paraphrase generation plays key roles in NLP tasks such as question answering, machine translation, and information retrieval. In this paper, we propose a novel framework for paraphrase generation. It simultaneously decodes the output sentence using a pretrained wordset-to-sequence model and a round-trip translation model. We evaluate this framework on Quora, WikiAnswers, MSCOCO and Twitter, and show its advantage over previous state-of-the-art unsupervised methods and distantly-supervised methods by significant margins on all datasets. For Quora and WikiAnswers, our framework even performs better than some strongly supervised methods with domain adaptation. Further, we show that the generated paraphrases can be used to augment the training data for machine translation to achieve substantial improvements.",
-                                link: "https://github.com/Karlguo/paraphrase/blob/main/Paraphrase_IJCAI_.pdf",
-                                code: "https://github.com/Karlguo/paraphrase",
-                                data: "https://github.com/Karlguo/paraphrase/tree/main/data",
-                                cite: "Zilu Guo, Zhongqiang Huang, Kenny Zhu, Guandan Chen, Kaibo Zhang, Boxing Chen and Fei Huang Automatic Paraphrasing via Sentence Reconstruction and Round-trip Translation. In Proceedings of <i>IJCAI 2021</i>"
-                            }, {
-                                web: "https://yizhuliu.github.io/Welcome/",
-                                title: "Keyword-aware Abstractive Summarization by Extracting Set-level Intermediate Summaries",
-                                abs: "Abstractive summarization is useful in providing a summary or a digest of news or other web texts and enhancing users reading experience, especially when they are reading on small displays such as mobile phones. However, existing encoder-decoder summarization models have difficulty learning the latent alignment between source documents and summaries because of their vast disparity in length. In this paper, we propose a extractor-abstractor framework in which the keyword-based extractor selects a few sets of salient sentences from the input document and then the abstractor paraphrases these sets of sentences in parallel, which are more aligned to the summary, to generate the final summary. The new extractor and abstractor are pretrained from a set of ``pseudo summaries'' extracted by specially designed heuristics, and then further trained together in a reinforcement learning framework. The results show that the proposed model generates high-quality summaries with faster training speed and less training memory footprint, and outperforms the state-of-the-art models on CNN/Daily Mail, Webis-TLDR-17, Webis-Snippet-20, WikiHow and DUC-2002 datasets.",
-                                link: "https://github.com/YizhuLiu/SetKE_ABS/main.pdf",
-                                code: "https://github.com/YizhuLiu/SetKE_ABS/code",
-                                data: "https://github.com/YizhuLiu/SetKE_ABS/data",
-                                cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Keyword-aware Abstractive Summarization by Extracting Set-level Intermediate Summaries. In Proceedings of <i>The Web Conference</i> 2021 (WWW '2021)"
-                            }, {
-                                web: "https://yizhuliu.github.io/Welcome/",
-                                title: "Reducing Repetition in Convolutional Abstractive Summarization",
-                                abs: "Convolutional sequence to sequence (CNN seq2seq) models have met success in abstractive summarization. However, their outputs often contain repetitive word sequences and logical inconsistencies, limiting the practicality of their application. In this paper, we find the reasons behind the repetition problem in CNN-based abstractive summarization through observing the attention map between the summaries with repetition and their corresponding source documents and mitigate the repetition problem. We propose to reduce the repetition in summaries by attention filter mechanism (ATTF) and sentence-level backtracking decoder (SBD), which dynamically redistributes attention over the input sequence as the output sentences are generated. The ATTF can record previously attended locations in the source document directly and prevent the decoder from attending to these locations. The SBD prevents the decoder from generating similar sentences more than once via backtracking at test. The proposed model outperforms the baselines in terms of ROUGE score, repeatedness, and readability. The results show that this approach generates high-quality summaries with minimal repetition and makes the reading experience better.",
-                                link: "https://www.cambridge.org/core/journals/natural-language-engineering/article/abs/reducing-repetition-in-convolutional-abstractive-summarization/2247BFF85CEFD40C1189B05CD6E9BE85",
-                                code: "https://github.com/YizhuLiu/sumrep",
-                                data: "https://github.com/YizhuLiu/sumrep",
-                                cite: "Yizhu Liu, Xinyue Chen, Xusheng Luo and Kenny Q. Zhu. Reducing Repetition in Convoluaiton Abstractive Summarization. <i>Natural Language Engineering</i> 2021"
-                            }, {
-                                web: "https://yizhuliu.github.io/Welcome/",
-                                title: "Length Control in Abstractive Summarization by Pretraining Information Selection",
-                                abs: "Previous length-controllable summarization models mostly control lengths at the decoding stage, whereas the encoding or the selection of information from the source document is not sensitive to the designed length. They also tend to generate summaries as long as those in the training data. In this paper, we propose a length-aware attention mechanism (LAAM) to adapt the encoding of the source based on the desired length. Our approach works by training LAAM on a summary length balanced dataset built from the original training data, and then fine-tuning as usual. Results show that this approach is effective in generating high-quality summaries with desired lengths and even those short lengths never seen in the original training set.",
-                                link: "https://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-lencon22.pdf",
-                                code: "https://github.com/YizhuLiu/lengthcontrol",
-                                data: "https://github.com/YizhuLiu/lengthcontrol",
-                                cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Length Control in Abstractive Summarization by Pretraining Information Selection. In Proceedings of <i>ACL 2022</i>"
-                            }, {
-                                web: "https://yizhuliu.github.io/Welcome/",
-                                title: "Reference-free Summarization Evaluation via Semantic Correlation and Compression Ratio",
-                                abs: "A document can be summarized in a number of ways. Reference-based evaluation of summarization has been criticized for its inflexibility. In this paper, we propose a new automatic reference-free evaluation metric that compares semantic distribution between source document and summary by pretrained language models and considers summary compression ratio. The experiments show that this metric is more consistent with human evaluation in terms of coherence, consistency, relevance, fluency.",
-                                link: "https://github.com/YizhuLiu/summeval/blob/main/paper.pdf",
-                                code: "https://github.com/YizhuLiu/summeval",
-                                data: "https://github.com/YizhuLiu/summeval",
-                                cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Reference-free Summarization Evaluation via Semantic Correlation and Compression Ratio. In Proceedings of <i>NAACL 2022</i>"
-                            }, {
-                                web: "https://yizhuliu.github.io/Welcome/",
-                                title: "Opinion Summarization by Weak-Supervision from Mix-structured Data",
-                                abs: "Opinion summarization of multiple reviews suffers from the lack of reference summaries for training. Most previous approaches construct multiple reviews and their summary based on textual similarities between reviews, resulting in information mismatch between the review input and the summary. In this paper, we convert each review into a mix of structured and unstructured data, which we call opinionaspect pairs (OAs) and implicit sentences (ISs). We propose a new method to synthesize training pairs of such mix-structured data as input and the textual summary as output, and design a summarization model with OA encoder and IS encoder. Experiments show that our approach outperforms previous methods on Yelp, Amazon and RottenTomatos datasets.",
-                                link: "https://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-opsum22.pdf",
-                                code: "https://github.com/YizhuLiu/Opinion-Summarization",
-                                data: "https://github.com/YizhuLiu/Opinion-Summarization",
-                                cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Opinion Summarization by Weak-Supervision from Mix-structured Data. In Proceedings of <i>EMNLP 2022</i>"
-                            }, {
-                                web: "",
-                                title: "Matching Questions and Answers in Online Forum Dialogues",
-                                abs: "Matching question-answer relations between two turns in conversations is not only the first step in analyzing dialogue structures, but also valuable for training dialogue systems. This paper presents a QA matching model considering both distance information and dialogue history by two simultaneous attention mechanisms called mutual attention. Given scores computed by the trained model between each non-question turn with its candidate questions, a greedy matching strategy is used for final predictions. Because existing dialogue datasets such as the Ubuntu dataset are not suitable for the QA matching task, we further create a dataset with 1,000 labeled dialogues and demonstrate that our proposed model outperforms the state-of-the-art and other strong baselines, particularly for matching long-distance QA pairs. ",
-                                link: "http://ebooks.iospress.nl/publication/55121",
-                                code: "https://github.com/JiaQiSJTU/QAmatching",
-                                data: "https://drive.google.com/file/d/1W6lTjThARhk1a4i6m95ySX4M7HWsfeHy/view?usp=sharing",
-                                cite: 'Qi Jia, Mengxue Zhang, Shengyao Zhang and Kenny Q. Zhu. Matching Questions and Answers in Dialogues from Online Forums. In the Proceedings of <i>ECAI 2020</i>.'
-                            }, {
-                                web: "",
-                                title: "Multi-turn Response Selection using Dialogue Dependency Relations",
-                                abs: "Multi-turn response selection is a task designed for developing dialogue agents. The performance on this task has a remarkable improvement with pre-trained language models. However, these models simply concatenate the turns in dialogue history as the input and largely ignore the dependencies between the turns. In this paper, we propose a dialogue extraction algorithm to transform a dialogue history into threads based on their dependency relations. Each thread can be regarded as a self-contained sub-dialogue. We also propose Thread-Encoder model to encode threads and candidates into compact representations by pre-trained Transformers and finally get the matching score through an attention layer. The experiments show that dependency relations are helpful for dialogue context understanding, and our model outperforms the state-of-the-art baselines on both DSTC7 and DSTC8*, with competitive results on UbuntuV2.",
-                                link: "https://www.aclweb.org/anthology/2020.emnlp-main.150/",
-                                code: "https://github.com/JiaQiSJTU/ResponseSelection",
-                                data: "",
-                                cite: "Qi Jia, Yizhu Liu, Siyu Ren, Kenny Q. Zhu and Haifeng Tang. Multi-turn Response Selection using Dialogue Dependency Relations. In the Proceedings of <i>EMNLP 2020</i>."
-                            }, {
-                                web: "",
-                                title: "DDRel: A New Dataset for Interpersonal Relation Classification in Dyadic Dialogues",
-                                abs: "Interpersonal language style shifting in dialogues is an interesting and almost instinctive ability of human. Understanding interpersonal relationship from language content is also a crucial step toward further understanding dialogues. Previous work mainly focuses on relation extraction between named entities in texts or within a single dialogue session. In this paper, we propose the task of relation classification of interlocutors based on their dialogues. We crawled movie scripts from IMSDb, and annotated the relation labels for each session according to 13 pre-defined relationships. The annotated dataset DDRel consists of 6300 dyadic dialogue sessions between 694 pair of speakers with 53,126 utterances in total. We also construct session-level and pair-level relation classification tasks with widely-accepted baselines. The experimental results show that this task is challenging for existing models and the dataset will be useful for future research.",
-                                link: "https://arxiv.org/abs/2012.02553",
-                                code: "https://github.com/JiaQiSJTU/DialogueRelationClassification",
-                                data: "https://adapt.seiee.sjtu.edu.cn/~angel/ddrel.zip",
-                                cite: "Qi Jia, Hongru Huangand Kenny Q. Zhu. DDRel: A New Dataset for Interpersonal Relation Classification in Dyadic Dialogues. In the Proceedings of <i>AAAI 2021</i>."
-                            }, {
-                                web: "project_qa.html",
-                                title: "Knowledge Base Question Answering via Encoding of Complex Query Graphs",
-                                abs: "Answering complex questions that involve multiple entities and multiple relations using a standard knowledge base is an open and challenging task. Most existing KBQA approaches focus on simpler questions and do not work very well on complex questions because they were not able to simultaneously represent the question and the corresponding complex query structure. In this work, we encode such complex query structure into a uniform vector representation, and thus successfully capture the interactions between individual semantic components within a complex question. This approach consistently outperforms existing methods on complex questions while staying competitive on simple questions.",
-                                link: "https://www.aclweb.org/anthology/D18-1242/",
-                                code: "https://github.com/lkq1992yeah/CompQA",
-                                data: "https://github.com/lkq1992yeah/CompQA",
-                                cite: "Kangqi Luo, Fengli Lin, Xusheng Luo, Kenny Zhu. Knowledge Base Question Answering via Encoding of Complex Query Graphs. In the Proceedings of <i>EMNLP 2018</i>."
-                            }, {
-                                web: "",
-                                title: "Post-Training Dialogue Summarization using Pseudo-Paraphrasing",
-                                abs: "Previous dialogue summarization techniques adapt large language models pretrained on the narrative text by injecting dialogue-specific features into the models. These features either require additional knowledge to recognize or make the resulting models harder to tune. To bridge the format gap between dialogues and narrative summaries in dialogue summarization tasks, we propose to post-train pretrained language models (PLMs) to rephrase from dialogue to narratives. After that, the model is fine-tuned for dialogue summarization as usual. Comprehensive experiments show that our approach significantly improves vanilla PLMs on dialogue summarization and outperforms other SOTA models by the summary quality and implementation costs.",
-                                link: "https://arxiv.org/abs/2204.13498",
-                                code: "https://github.com/JiaQiSJTU/DialSent-PGG",
-                                data: "https://drive.google.com/file/d/1z0pGh7sbUp27HLhhfwWQt-Pd6iarLom2/view?usp=sharing",
-                                cite: "Qi Jia, Yizhu Liu, Haifeng Tang and Kenny Q. Zhu. Post-Training Dialogue Summarization using Pseudo-Paraphrasing. In the Proceedings of Findings of <i>NAACL 2022</i>."
-                            }, {
-                                web: "",
-                                title: "ChatMatch: Evaluating Chatbots by Autonomous Chat Tournaments",
-                                abs: "Existing automatic evaluation systems of chatbots mostly rely on static chat scripts as ground truth, which is hard to obtain, and requires access to the models of the bots as a form of “white-box testing”. Interactive evaluation mitigates this problem but requires human involvement. In our work, we propose an interactive chatbot evaluation framework in which chatbots compete with each other like in a sports tournament, using ﬂexible scoring metrics. This framework can efﬁciently rank chatbots independently from their model architectures and the domains for which they are trained.",
-                                link: "https://aclanthology.org/2022.acl-long.522.pdf",
-                                code: "https://github.com/ruolanyang/ChatMatch",
-                                data: "https://github.com/ruolanyang/ChatMatch",
-                                cite: "Ruolan Yang, Zitong Li, Haifeng Tang and Kenny Q. Zhu. ChatMatch: Evaluating Chatbots by Autonomous Chat Tournaments. In Proceedings of <i>ACL 2022</i>."
-                            }, {
-                                web: "",
-                                title: "MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data",
-                                abs: "Few-shot relation classification seeks to classify incoming query instances after meeting only few support instances.This ability is gained by training with large amount of in-domain annotated data. In this paper, we tackle an even harder problem by further limiting the amount of data available at training time. We propose a few-shot learning framework for relation classification, which is particularly powerful when the training data is very small. In this framework, models not only strive to classify query instances, but also seek underlying knowledge about the support instances to obtain better instance representations. The framework also includes a method for aggregating cross-domain knowledge into models by open-source task enrichment. Additionally, we construct a brand new dataset: the TinyRel-CM dataset, a few-shot relation classification dataset in health domain with purposely small training data and challenging relation classes. Experimental results demonstrate that our framework brings performance gains for most underlying classification models, outperforms the state-of-the-art results given small training data, and achieves competitive results with sufficiently large training data.",
-                                link: "http://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-mick.pdf",
-                                code: "https://github.com/XiaoqingGeng/MICK",
-                                data: "https://github.com/XiaoqingGeng/MICK/tree/master/data",
-                                cite: 'Xiaoqing Geng, Xiwen Chen and Kenny Q. Zhu. MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data. In the Proceedings of <i>CIKM 2020</i>.'
-                            }, {
-                                web: "",
-                                title: "Knowledge-Driven Distractor Generation for Cloze-style Multiple Choice Questions",
-                                abs: "In this paper, we propose a novel configurable framework to automatically generate distractive choices for open-domain cloze-style multiple-choice questions. The framework incorporates a general-purpose knowledge base to effectively create a small distractor candidate set, and a feature-rich learning-to-rank model to select distractors that are both plausible and reliable. Experimental results on a new dataset across four domains show that our framework yields distractors outperforming previous methods both by automatic and human evaluation. The dataset can also be used as a benchmark for distractor generation research in the future.",
-                                link: "https://arxiv.org/abs/2004.09853",
-                                code: "https://github.com/DRSY/DGen",
-                                data: "https://github.com/DRSY/DGen",
-                                cite: 'Siyu Ren and Kenny Q. Zhu. Knowledge-Driven Distractor Generation for Cloze-style Multiple Choice Questions. In the Proceedings of <i>AAAI 2021</i>.'
-                            }, {
-                                web: "http://202.120.38.146:9751/",
-                                title: "Automatic Illustration for Children's Storybook",
-                                abs: "Illustration plays a vital role in children's reading process. An appropriate illustration could add both interest and convenience to reading.However, it takes too much work and time to generate illustrations by man. So in this project we propose an automatic illustration model based on image retrieval which can output several illustrations with a consistent style with texts as input. Our model consists of four parts: NER, web crawler, object detection and style transfer. For demonstration we designed a web demo online on which we can simply input stories and get illustrations of a selected style efficiently.",
-                                link: "",
-                                code: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
-                                data: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
-                                cite: ""
-                            }, {
-                                web: "",
-                                title: "Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation",
-                                abs: "News recommendation for anonymous readers is a useful but challenging task for many news portals, where interactions between readers and articles are limited within a temporary login session. Previous works tend to formulate session-based recommendation as a next item prediction task, while they neglect the implicit feedback from user behaviors, which indicates what users really like or dislike. Hence, we propose a comprehensive framework to model user behaviors through positive feedback (i.e., the articles they spend more time on) and negative feedback (i.e., the articles they choose to skip without clicking in). Moreover, the framework implicitly models the user using their session start time, and the article using its initial publishing time, in what we call neutral feedback. Empirical evaluation on three real-world news datasets shows the framework's promising performance of more accurate, diverse and even unexpectedness recommendations than other state-of-the-art session-based recommendation approaches.",
-                                link: "",
-                                code: "https://github.com/summmeer/session-based-news-recommendation",
-                                data: "https://github.com/summmeer/session-based-news-recommendation",
-                                cite: 'Shansan Gong and Kenny Q. Zhu. Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation. In <i>Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval. 2022</i>.'
-                            }, 
-]
-
-                            for (i = 0; i < ProjList.length; i++) {
-                                paper = ProjList[i];
-                                document.write('<p>');
-                                document.write('<a href="' + paper.web + '"><h5>' + paper.title + '</h5></a>');
-                                document.write('<a href="' + paper.link + '">[paper]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.code + '">[code]</a>');
-                                document.write('&nbsp;&nbsp;');
-                                document.write('<a href="' + paper.data + '">[data]</a><br><br>');
-                                // document.write('<nobr>')
-                                document.write('<span name="box" class="many-txt"> ' + '<b>Abstract</b>: ' + paper.abs + '</span>' + '<a name="button">Show All</a><br><br>');
-                                // document.write()
-                                // document.write('</nobr>')
-                                // document.write('<button type="button">Show All</button><br>')
-                                document.write('<b>Cite</b>: ' + paper.cite + '<br>');
-                                document.write('<hr>');
-
-                            }
-                        </script>
-                    </div>
-                </div>
-            </div>
-
+          <div class="twelve columns">
             <script>
-                let buttons = document.getElementsByName("button");
+              ProjList = [
+                {
+                  web: "#",
+                  title:
+                    "Towards Distance-aware Synthetic Audio Mixtures for Universal Sound Separation",
+                  abs: "A machine learning model performs a designated task based on the training data. Albeit existing universal sound separation models which heavily rely on a mix-and-separate framework due to a lack of training data show a feasible performance to some extent, the performance is still limited to use in strict practical ap9plications. With a hypothesis that the gap is emerged by different distributions between a random and a real-world, this paper introduces an audio mixing strategy on audio-text pair datasets. A distance knowledge between audio sources is derived from Large Language Models, determining how far apart they should be in a mixed output. Pairs of mixtures and their corresponding ground ttruths are created as a result. To validate our hypothesis and the effectiveness of the strategy, human evaluation is mainly conducted on pure recordings manually curated from multiple datasets. A result of the synthesized benchmark randomly created by a pre vious work is also reported to discuss the impact of the naturalistic audio in the sound source separation field.",
+                  link: "https://kenzhu2000.github.io/papers/icassp26-distance.pdf",
+                  code: "#",
+                  data: "#",
+                  cite: "Wonjun Park, Tuan M. Dang, and Kenny Q. Zhu. Towards Distance-aware Synthetic Audio Mixtures for Universal Sound Separation. In the Proceedings of <i>IEEE ICASSP 2026.</i>",
+                },
+                {
+                  web: "https://github.com/UTA-ACL2/corvids_vocal_repertoire",
+                  title:
+                    "Unsupervised Discovery and Analysis of the Vocal Repertoires and Patterns of Select Corvid Species",
+                  abs: "Corvids are renowned for cognitive and social complexity, yet the structure of their vocal communication remains poorly understood. We analyzed recordings from five Corvus species, extracting call units and sequences, and identified call types via unsupervised clustering. Calls were described by 24 acoustic features, including a novel within-call repetition metric, and sequential structure was assessed with 1-4 gram models using perplexity. Features distinguishing species differed from those defining clusters, revealing substantial intra-species vocal diversity. Bigram models best captured vocal sequences across four species, with higher-order models also fitting the American crow. These results show Corvids produce structured, repeated sequences and demonstrate how big data analyses can help interpret songbird vocal structure.",
+                  link: "https://kenzhu2000.github.io/papers/icassp26-crow.pdf",
+                  code: "https://github.com/UTA-ACL2/corvids_vocal_repertoire",
+                  data: "https://doi.org/10.5281/zenodo.18381906",
+                  cite: "Nitin Sudarsanam, Sahla Kader, Isaac Fernandezlopez, Sophie Huang, Tuan M. Dang, Theron S. Wang, Hridayesh Lekhak, Kenny Q. Zhu. Unsupervised Discovery and Analysis of the Vocal Repertoires and Patterns of Select Corvid Species. In the Proceedings of IEEE ICASSP 2026.",
+                },
+                {
+                  web: "https://github.com/Lekhak123/A-Data-driven-Approach-to-the-Longitudinal-Study-of-Canine-Vocal-Pattern-Development",
+                  title:
+                    "A Data-driven Approach to the Longitudinal Study of Canine Vocal Pattern Development",
+                  abs: "Longitudinal studies of animal vocalizations provide crucial insights into developmental patterns and communicative evolution. To aid such investigations in canines, this paper introduces the Canine Age Transition Vocalization Dataset, a large-scale collection of dog vocalizations featuring meticulously verified metadata (including precise birthdate, breed, and individual dog ID) for 125 dogs across 6 common breeds. Our in-depth longitudinal analysis of this dataset then reveals novel findings on how key vocal parameters, encompassing defined bark types and finer-grained acoustic components (Elemental Dog Bark Units, or EDBUs), change as dogs mature. This work, therefore, offers both a significant new resource and foundational data that enable deeper, more nuanced investigations into the lifelong vocal development of dogs and other animal communication.",
+                  link: "https://kenzhu2000.github.io/papers/acmmm25-doglong.pdf",
+                  code: "https://github.com/Lekhak123/A-Data-driven-Approach-to-the-Longitudinal-Study-of-Canine-Vocal-Pattern-Development",
+                  data: "https://github.com/Lekhak123/A-Data-driven-Approach-to-the-Longitudinal-Study-of-Canine-Vocal-Pattern-Development",
+                  cite: "Hridayesh Lekhak, Tuan Minh Dang, Theron S. Wang, Kenny Q. Zhu. A Data-driven Approach to the Longitudinal Study of Canine Vocal Pattern Development. In the Proceedings of ACM Multimedia 2025 (Brave New Ideas)",
+                },
+                {
+                  web: "https://github.com/Lekhak123/DogSpeak-A-Canine-Vocalization-Classification-Dataset",
+                  title:
+                    "DogSpeak: A Canine Vocalization Classification Dataset",
+                  abs: "Progress in understanding real-world canine vocal communication is constrained by datasets lacking scale and 'in-the-wild' diversity. We introduce DogSpeak, a large-scale public dataset of 77,202 Barkseqs (33.162 hours) from 156 dogs (5 breeds), uniquely sourced from online social media with accurate dog ID, sex, and breed labels. DogSpeak, one of the largest of its kind, addresses prior limitations. Benchmark tasks (sex, breed, individual dog recognition) demonstrate its utility and highlight how its inherent real-world challenges necessitate and foster research into more robust bioacoustic models, preprocessing, and feature representation.",
+                  link: "https://kenzhu2000.github.io/papers/acmmm25-dogspeak.pdf",
+                  code: "https://github.com/Lekhak123/DogSpeak-A-Canine-Vocalization-Classification-Dataset",
+                  data: "https://github.com/Lekhak123/DogSpeak-A-Canine-Vocalization-Classification-Dataset",
+                  cite: "Hridayesh Lekhak, Theron S. Wang, Tuan Minh Dang, Kenny Q. Zhu. DogSpeak: A Canine Vocalization Classification Dataset. In the Proceedings of ACM Multimedia 2025 (Datasets Track)",
+                },
+                {
+                  web: "https://github.com/tmdang1101/EmotionalCanines",
+                  title:
+                    "EmotionalCanines: A Dataset for Analysis of Arousal and Valence in Dog Vocalization",
+                  abs: "This study centers on the creation of a novel dog bark emotion dataset, EmotionalCanines, capturing the emotional spectrum of canine vocalizations. In the current literature on animal communication and its intersection with machine learning, there is a limited amount of open-sourced data available to facilitate research, mainly due to constraints in animal subjects and recording conditions. To address this gap, we propose a framework that enables the collection of reliable arousal and valence labels in animal emotional state at scale. Through its application, we built a dataset of 1,400 dog bark sequences with corresponding arousal and valence labels, the largest of its kind, for the Husky and Shiba Inu dog breeds. By constructing this dataset, we provide a foundation for decoding dog bark patterns and advancing animal communication research.",
+                  link: "https://kenzhu2000.github.io/papers/acmmm25-dogemo.pdf",
+                  code: "https://github.com/tmdang1101/EmotionalCanines",
+                  data: "https://github.com/tmdang1101/EmotionalCanines",
+                  cite: "Tuan Minh Dang, Theron S. Wang, Hridayesh Lekhak, Kenny Q. Zhu. EmotionalCanines: A Dataset for Analysis of Arousal and Valence in Dog Vocalization. In the Proceedings of ACM Multimedia 2025 (Datasets Track)",
+                },
+                {
+                  web: "https://github.com/fispresent/dog2vec",
+                  title:
+                    "Dog2vec: Self-Supervised Pre-Training for Canine Vocal Representation",
+                  abs: "Previous generalized biological voice models were trained on large amounts of data from multiple species. However, on average, there is very little training data on species-specific voices, while large differences between the vocalizations of species may even be a barrier to encoding vocal features. This leads to potentially large errors in using generic models for species-specific vocalization studies. We collected over 6000 hours of dog barking videos and presented the first animal-specific bioacoustic embedding model, Dog2vec1 . The results indicate that Dog2vec outperforms species-independent pre-trained models and achieves state-of-the-art results on a series of dog-related tasks, including dog bark type recognition and dog sound event detection, and obtain a relative 8.2% performance increase.",
+                  link: "https://www.isca-archive.org/interspeech_2025/li25o_interspeech.pdf",
+                  code: "https://github.com/fispresent/dog2vec",
+                  data: "https://github.com/fispresent/dog2vec",
+                  cite: "Xingyuan Li, Kenny Q. Zhu, and Mengyue Wu. Dog2vec: Self-Supervised Pre-Training for Canine Vocal Representation. In Proc. Interspeech 2025, pp. 1698-1702. 2025.",
+                },
+                {
+                  web: "https://aclanthology.org/2025.acl-long.451/",
+                  title:
+                    "Toward Automatic Discovery of a Canine Phonetic Alphabet (ACL 2025 Outstanding Paper Award)",
+                  abs: "Dogs communicate intelligently but little is known about the phonetic properties of their vocalization communication. For the first time, this paper presents an iterative algorithm inspired by human phonetic discovery, which is based on minimal pairs that determine phonemes by distinguishing different words in human language, and is able to produce a complete alphabet of distinct canine phoneme-like units. In addition, the algorithm produces a number of canine repeated acoustic units, which may correspond to specific environments and activities of a dog, composed exclusively of the canine phoneme-like units in the alphabet. The framework outlined in this paper is expected to function not only on canines but other animal species.",
+                  link: "https://aclanthology.org/2025.acl-long.451/",
+                  code: "https://aclanthology.org/2025.acl-long.451/",
+                  data: "https://aclanthology.org/2025.acl-long.451/",
+                  cite: "Theron S. Wang, Xingyuan Li, Hridayesh Lekhak, Tuan Minh Dang, Mengyue Wu, and Kenny Q. Zhu. 2025. Toward Automatic Discovery of a Canine Phonetic Alphabet. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 9207–9219, Vienna, Austria. Association for Computational Linguistics.",
+                },
+                {
+                  web: "https://github.com/UTA-ACL2/canineLexical",
+                  title:
+                    "Phonetic and Lexical Discovery of Canine Vocalization",
+                  abs: "This paper attempts to discover communication patterns automatically within dog vocalizations using a data-driven approach, which breaks the barrier that exists in previous methods that heavily rely on human prior knowledge of limited data. We present a self-supervised approach with HuBERT, enabling the accurate classification of phones, and an adaptive grammar induction method that identifies phone sequence patterns suggesting a preliminary vocabulary within dog vocalizations. Our results show that a subset of this vocabulary has substantial causal relations with certain canine activities, suggesting signs of stable semantics associated with these words.",
+                  link: "https://kenzhu2000.github.io/papers/emnlp24-dog.pdf",
+                  code: "https://github.com/UTA-ACL2/canineLexical",
+                  data: "https://github.com/UTA-ACL2/canineLexical",
+                  cite: "Theron S. Wang, Xingyuan Li, Chunhao Zhang, Mengyue Wu, Kenny Q. Zhu. Phonetic and Lexical Discovery of Canine Vocalization. In the Findings of EMNLP 2024.",
+                },
 
-                // let p = document.getElementById("box");
-                // alert(p)
-                for (var i = 0; i < buttons.length; i++) {
-                    button = buttons[i];
-                    let p = document.getElementsByName("box")[i];
-                    // p = pp[i];
-                    // var str = document.getElementsByName("box")[i].innerHTML;
-                    var onOff = true;
-                    button.onclick = function() {
-                        // if(onOff){
-                        //   p.innerHTML = p.innerHTML.substr(0,50)+'...';
-                        //   this.innerHTML='Show All'
-                        // }else{
-                        //   p.innerHTML = p.innerHTML;
-                        //   this.innerHTML='Hide'
-                        // }
-                        // onOff = !onOff;
-                        // return true;
-
-                        if (this.innerHTML == "Show All") {
-                            p.classList.remove("many-txt");
-                            p.classList.add("all-txt");
-                            this.innerHTML = "Hide";
-                        } else {
-                            p.classList.remove("all-txt");
-                            p.classList.add("many-txt");
-                            this.innerHTML = "Show All";
-                        }
-                    }
-                }
+                {
+                  web: "https://arxiv.org/abs/2402.15985",
+                  title:
+                    "Phonetic and Lexical Discovery of a Canine Language using HuBERT",
+                  abs: "This paper delves into the pioneering exploration of potential communication patterns within dog vocalizations and transcends traditional linguistic analysis barriers, which heavily relies on human priori knowledge on limited datasets to find sound units in dog vocalization. We present a self-supervised approach with HuBERT, enabling the accurate classification of phoneme labels and the identification of vocal patterns that suggest a rudimentary vocabulary within dog vocalizations. Our findings indicate a significant acoustic consistency in these identified canine vocabulary, covering the entirety of observed dog vocalization sequences. We further develop a web-based dog vocalization labeling system. This system can highlight phoneme n-grams, present in the vocabulary, in the dog audio uploaded by users.",
+                  link: "https://arxiv.org/abs/2402.15985",
+                  code: "",
+                  data: "",
+                  cite: "Li, Xingyuan, Sinong Wang, Zeyu Xie, Mengyue Wu, and Kenny Q. Zhu. Phonetic and Lexical Discovery of a Canine Language using HuBERT. arXiv preprint arXiv:2402.15985 2024.",
+                },
+                {
+                  web: "https://arxiv.org/abs/2309.13086",
+                  title:
+                    "Towards Lexical Analysis of Dog Vocalizations via Online Videos",
+                  abs: "Deciphering the semantics of animal language has been a grand challenge. This study presents a data-driven investigation into the semantics of dog vocalizations via correlating different sound types with consistent semantics. We first present a new dataset of Shiba Inu sounds, along with contextual information such as location and activity, collected from YouTube with a well-constructed pipeline. The framework is also applicable to other animal species. Based on the analysis of conditioned probability between dog vocalizations and corresponding location and activity, we discover supporting evidence for previous heuristic research on the semantic meaning of various dog sounds. For instance, growls can signify interactions. Furthermore, our study yields new insights that existing word types can be subdivided into finer-grained subtypes and minimal semantic unit for Shiba Inu is word-related. For example, whimper can be subdivided into two types, attention-seeking and discomfort.",
+                  link: "https://arxiv.org/pdf/2309.13086",
+                  code: "",
+                  data: "",
+                  cite: "Yufei Wang, Chunhao Zhang, Jieyi Huang, Mengyue Wu, Kenny Zhu. Towards Lexical Analysis of Dog Vocalizations via Online Videos. ArXiv preprint arXiv:2309.13086. 2023.",
+                },
+                {
+                  web: "https://arxiv.org/abs/2309.13085",
+                  title:
+                    "Does My Dog''Speak''Like Me? The Acoustic Correlation between Pet Dogs and Their Human Owners",
+                  abs: "How hosts language influence their pets' vocalization is an interesting yet underexplored problem. This paper presents a preliminary investigation into the possible correlation between domestic dog vocal expressions and their human host's language environment. We first present a new dataset of Shiba Inu dog vocals from YouTube, which provides 7500 clean sound clips, including their contextual information of these vocals and their owner's speech clips with a carefully-designed data processing pipeline. The contextual information includes the scene category in which the vocal was recorded, the dog's location and activity. With a classification task and prominent factor analysis, we discover significant acoustic differences in the dog vocals from the two language environments. We further identify some acoustic features from dog vocalizations that are potentially correlated to their host language patterns.",
+                  link: "https://arxiv.org/abs/2309.13085",
+                  code: "https://anonymous.4open.science/r/EJSHIBAVOICE-0DC5",
+                  data: "https://anonymous.4open.science/r/EJSHIBAVOICE-0DC5",
+                  cite: "Jieyi Huang, Chunhao Zhang, Yufei Wang, Mengyue Wu, Kenny Zhu. ArXiv reprint arXiv:2309.13085. 2023.",
+                },
+                {
+                  web: "https://github.com/XSiling/ShibaScript",
+                  title:
+                    "Transcribing Vocal Communications of Domestic Shiba lnu Dogs",
+                  abs: "How animals communicate and whether they have languages is a persistent curiosity of human beings. However, the study of animal communications has been largely restricted to data from field recordings or in a controlled environment, which is expensive and limited in scale and variety. In this paper, we take domestic Shiba Inu dogs as an example and extract their vocal communications from a large amount of YouTube videos of Shiba Inu dogs. We classify these clips into different scenarios and locations, and further transcribe the audio into phonetically symbolic scripts through a systematic process. We discover consistent phonetic symbols among their expressions, which indicates that Shiba Inu dogs can have systematic verbal communication patterns. This reusable framework produces the first-of-its-kind Shiba Inu vocal communication dataset that will be valuable to future research in both zoology and linguistics.",
+                  link: "https://aclanthology.org/2023.findings-acl.869/",
+                  code: "https://github.com/XSiling/ShibaScript",
+                  data: "https://github.com/XSiling/ShibaScript",
+                  cite: "Jieyi Huang, Chunhao Zhang, Mengyue Wu, and Kenny Q. Zhu. 2023. Transcribing Vocal Communications of Domestic Shiba lnu Dogs. In Findings of the Association for Computational Linguistics: ACL 2023, pages 13819–13832.",
+                },
+              ];
+              for (i = 0; i < ProjList.length; i++) {
+                paper = ProjList[i];
+                document.write("<p>");
+                document.write(
+                  '<a href="' +
+                    paper.web +
+                    '"><h5>' +
+                    paper.title +
+                    "</h5></a>",
+                );
+                document.write('<a href="' + paper.link + '">[paper]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write('<a href="' + paper.code + '">[code]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write(
+                  '<a href="' + paper.data + '">[data]</a><br><br>',
+                );
+                // document.write('<nobr>')
+                document.write(
+                  '<span name="box" class="many-txt"> ' +
+                    "<b>Abstract</b>: " +
+                    paper.abs +
+                    "</span>" +
+                    '<a name="button">Show All</a><br><br>',
+                );
+                // document.write()
+                // document.write('</nobr>')
+                // document.write('<button type="button">Show All</button><br>')
+                document.write("<b>Cite</b>: " + paper.cite + "<br>");
+                document.write("<hr>");
+              }
             </script>
-            <!--#include file="_footer.html" --></div>
-    </body>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h4 id="mh">NLP for Mental Health</h4>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <script>
+              ProjList = [
+                {
+                  web: "",
+                  title:
+                    "Mapping Long-term Causalities in Psychiatric Symptomatology and Life Events from Social Media",
+                  abs: "Social media is a valuable data source for exploring mental health issues. However, previous studies have predominantly focused on the semantic content of these posts, overlooking the importance of their temporal attributes, as well as the evolving nature of mental disorders and symptoms. In this paper, we study the causality between psychiatric symptoms and life events, as well as among different symptoms from social media posts, which leads to better understanding of the underlying mechanisms of mental disorders. By applying these extracted causality features to tasks such as diagnosis point detection and early risk detection of depression, we notice considerable performance enhancement. This indicates that causality information extracted from social media data can boost the efficacy of mental disorder diagnosis and treatment planning.",
+                  link: "https://kenzhu2000.github.io/papers/naacl24-causal.pdf",
+                  code: "",
+                  data: "",
+                  cite: 'Chen, Siyuan, et al. "Mapping Long-term Causalities in Psychiatric Symptomatology and Life Events from Social Media." Proceedings of the 2024 Conference of the <i>North American Chapter of the Association for Computational Linguistics</i>: Human Language Technologies (Volume 1: Long Papers). 2024',
+                },
+                {
+                  web: "",
+                  title:
+                    "Detection of Multiple Mental Disorders from Social Media with Two-Stream Psychiatric Experts",
+                  abs: "Existing Mental Disease Detection (MDD) research largely studies the detection of a single disorder, overlooking the fact that mental diseases might occur in tandem. Many approaches are not backed by domain knowledge (e.g., psychiatric symptoms) and thus fail to produce interpretable results. To tackle these issues, we propose an MDD framework that is capable of learning the shared clues of all diseases, while also capturing the specificity of each single disease. The two-stream architecture which simultaneously processes text and symptom features can combine the strength of both modalities and offer knowledge-based explainability. Experiments on the detection of 7 diseases show that our model can boost detection performance by more than 10%, especially in relatively rare classes.",
+                  link: "https://kenzhu2000.github.io/papers/emnlp23-psyex.pdf",
+                  code: "https://github.com/chesiy/EMNLP23-PsyEx",
+                  data: "",
+                  cite: "Siyuan Chen*, Zhiling Zhang*, Mengyue Wu and Kenny Q. Zhu. Detection of Multiple Mental Disorders from Social Media with Two-Stream Psychiatric Experts. In the Proceedings of <i>EMNLP 2023</i>.",
+                },
+                {
+                  web: "https://github.com/wsntxxn/BLAT",
+                  title:
+                    "BLAT: Bootstrapping Language-Audio Pre-training based on AudioSet Tag-guided Synthetic Data",
+                  abs: "Compared with ample visual-text pre-training research, few works explore audio-text pre-training, mostly due to the lack of sufficient Zelin Zhou Shanghai Jiao Tong University ze-lin@sjtu.edu.cn Mengyue Wu∗ Shanghai Jiao Tong University mengyuewu@sjtu.edu.cn multi-modal learning, contrastive learning, audio captioning, audio classification, zero-shot inference parallel audio-text data. Most existing methods incorporate the visual modalityasapivotforaudio-textpre-training,whichinevitably induces data noise. In this paper, we propose to utilize audio captioning to generate text directly from audio, without the aid of the visual modality so that potential noise from modality mismatch is eliminated. Furthermore, we propose caption generation under the guidance of AudioSet tags, leading to more accurate captions. With the above two improvements, we curate high-quality, large-scale parallel audio-text data, based on which we perform audio-text pre-training. We comprehensively demonstrate the performance of the pre-trained audio-text model on a series of downstream audio-related tasks, including single-modality tasks like audio classification and tagging, as well as cross-modal tasks consisting of audio-text retrieval and audio-based text generation. Experimental results indicate that our approach achieves state-of-the-art zeroshot classification performance on most datasets, suggesting the effectiveness of our synthetic data. The audio encoder also serves as an efficient pattern recognition model by fine-tuning it on audiorelated tasks. Synthetic data and pre-trained models are available online.",
+                  link: "https://kenzhu2000.github.io/papers/mm23-blat.pdf",
+                  code: "https://github.com/wsntxxn/BLAT",
+                  data: "https://zenodo.org/record/8192397",
+                  cite: "Xuenan Xu, Zhiling Zhang, Zelin Zhou, Pingyue Zhang, Zeyu Xie, Mengyue Wu and Kenny Q. Zhu. BLAT: Bootstrapping Language-Audio Pre-training based on AudioSet Tag-guided Synthetic Data. In the Proceedings of <i>ACM Multimedia 2023</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Symptom Identification for Interpretable Detection of Multiple Mental Disorders on Social Media",
+                  abs: "Mental disease detection (MDD) from social media has suffered from poor generalizability and interpretability, due to lack of symptom modeling. This paper introduces PsySym, the first annotated symptom identification corpus of multiple psychiatric disorders, to facilitate further research progress. PsySym is annotated according to a knowledge graph of the 38 symptom classes related to 7 mental diseases complied from established clinical manuals and scales, and a novel annotation framework for diversity and quality. Experiments show that symptom-assisted MDD enabled by PsySym can outperform strong pure-text baselines. We also exhibit the convincing MDD explanations provided by symptom predictions with case studies, and point to their further potential applications. ",
+                  link: "https://arxiv.org/abs/2205.11308",
+                  code: "https://github.com/blmoistawinde/EMNLP22-PsySym",
+                  data: "https://github.com/blmoistawinde/EMNLP22-PsySym",
+                  cite: "Zhiling Zhang*, Siyuan Chen*, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>EMNLP 2022</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression",
+                  abs: "Depression is a prominent health challenge to the world, and early risk detection (ERD) of depression from online posts can be a promising technique for combating the threat. Early depression detection faces the challenge of efficiently tackling streaming data, balancing the tradeoff between timeliness, accuracy and explainability. To tackle these challenges, we propose a psychiatric scale guided risky post screening method that can capture risky posts related to the dimensions defined in clinical depression scales, and providing interpretable diagnostic basis. A Hierarchical Attentional Network equipped with BERT (HAN-BERT) is proposed to further advance explainable predictions. For ERD, we propose an online algorithm based on an evolving queue of risky posts that can significantly reduce the number of model inferences to boost efficiency. Experiments show that our method outperforms the competitive feature-based and neural models under conventional depression detection settings, and achieves simultaneous improvement in both efficacy and efficiency for ERD.",
+                  link: "https://github.com/blmoistawinde/scale_early_depress_detect/blob/main/paper.pdf",
+                  code: "https://github.com/blmoistawinde/scale_early_depress_detect",
+                  data: "https://github.com/blmoistawinde/scale_early_depress_detect",
+                  cite: "Zhiling Zhang, Siyuan Chen, Mengyue Wu and Kenny Q. Zhu. Psychiatric Scale Guided Risky Post Screening for Early Detection of Depression. In the Proceedings of <i>IJCAI 2022</i>.",
+                },
+              ];
+              for (i = 0; i < ProjList.length; i++) {
+                paper = ProjList[i];
+                document.write("<p>");
+                document.write(
+                  '<a href="' +
+                    paper.web +
+                    '"><h5>' +
+                    paper.title +
+                    "</h5></a>",
+                );
+                document.write('<a href="' + paper.link + '">[paper]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write('<a href="' + paper.code + '">[code]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write(
+                  '<a href="' + paper.data + '">[data]</a><br><br>',
+                );
+                // document.write('<nobr>')
+                document.write(
+                  '<span name="box" class="many-txt"> ' +
+                    "<b>Abstract</b>: " +
+                    paper.abs +
+                    "</span>" +
+                    '<a name="button">Show All</a><br><br>',
+                );
+                // document.write()
+                // document.write('</nobr>')
+                // document.write('<button type="button">Show All</button><br>')
+                document.write("<b>Cite</b>: " + paper.cite + "<br>");
+                document.write("<hr>");
+              }
+            </script>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h4 id="lw">Light-weight NLP</h4>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <script>
+              ProjList = [
+                {
+                  web: "",
+                  title:
+                    "Low-Rank Prune-And-Factorize for Language Model Compression",
+                  abs: "The components underpinning PLMs—large weight matrices—were shown to bear considerable redundancy. Matrix factorization, a well-established technique from matrix theory, has been utilized to reduce the number of parameters in PLM. However, it fails to retain satisfactory performance under moderate to high compression rates. In this paper, we identify the full-rankness of fine-tuned PLM as the fundamental bottleneck for the failure of matrix factorization and explore the use of network pruning to extract low-rank sparsity pattern desirable to matrix factorization. We find such a low-rank sparsity pattern exclusively exists in models generated by first-order pruning, which motivates us to unite the two approaches and achieve more effective model compression. We further propose two techniques: sparsity-aware SVD and mixed-rank fine-tuning, which improve the initialization and training of the compression procedure, respectively. Experiments on GLUE and question-answering tasks show that the proposed method has a superior compression-performance trade-off compared to existing approaches.",
+                  link: "https://kenzhu2000.github.io/papers/coling24-lpaf.pdf",
+                  code: "",
+                  data: "",
+                  cite: "Siyu Ren and Kenny Q. Zhu. Low-Rank Prune-And-Factorize for Language Model Compression. In the Proceedings of <i>COLING 2024</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "EMO: Earth Mover Distance Optimization for Auto-regressive Language Modeling.",
+                  abs: "Neural language models are predominantly trained using maximum likelihood estimation (MLE), which is equivalent to minimizing the forward cross-entropy between the empirical data distribution and the model distribution. However, various degeneration phenomena are still widely observed when decoding from the distributions learned by such models. We establish that the forward cross-entropy is suboptimal as a distance metric for aligning human and model distribution due to its (1) recall-prioritization (2) negative diversity ignorance and (3) train-test mismatch. In this paper, we propose Earth Mover Distance Optimization (EMO) for auto-regressive language modeling. EMO capitalizes on the inherent properties of earth mover distance to address the aforementioned challenges. Due to the high complexity of direct computation, we further introduce a feasible upper bound for EMO to ease end-to-end training. Upon extensive evaluation, EMO demonstrates a consistently better language modeling performance than MLE across domains.  Moreover, EMO shows noteworthy enhancements in downstream performance with minimal fine-tuning on merely 25,000 sentences, highlighting its potential as a lightweight calibration method for enhancing large-scale pre-trained language models.",
+                  link: "https://github.com/DRSY/EMO",
+                  code: "https://github.com/DRSY/EMO",
+                  data: "",
+                  cite: "Siyu Ren, Zhiyong Wu and Kenny Q. Zhu. EMO: Earth Mover Distance Optimization for Auto-regressive Language Modeling. In the Proceedings of <i>ICLR 2024</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Context Compression for Auto-regressive Transformers with Sentinel Tokens",
+                  abs: "The quadratic complexity of the attention module makes it gradually become the bulk of compute in Transformer-based LLMs during generation. Moreover, the excessive key-value cache that arises when dealing with long inputs also brings severe issues on memory footprint and inference latency. In this work, we propose a plug-and-play approach that is able to incrementally compress the intermediate activation of a specified span of tokens into compact ones, thereby reducing both memory and computational cost when processing subsequent context. Experiments on both in-domain language modeling and zero-shot open-ended document generation demonstrate the advantage of our approach over sparse attention baselines in terms of fluency, n-gram matching, and semantic similarity. At last, we comprehensively profile the benefit of context compression on improving the system throughout.",
+                  link: "https://github.com/DRSY/KV_Compression",
+                  code: "https://github.com/DRSY/KV_Compression",
+                  data: "https://github.com/DRSY/KV_Compression",
+                  cite: "Siyu Ren, Qi Jia and Kenny Q. Zhu. Context Compression for Auto-regressive Transformers with Sentinel Tokens. In the Proceedings of <i>EMNLP 2023</i>ww.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Pruning Pre-trained Language Models with Principled Importance and Self-regularization",
+                  abs: "Iterative pruning is one of the most effective compression methods for pre-trained language models. We discovered that finding the optimal pruning decision is an equalityconstrained 0-1 Integer Linear Programming problem. The solution to this optimization problem leads to a principled importance criterion which we use to rank parameters during iterative model pruning. To mitigate the poor generalization at high sparsity levels, we propose a self-regularization scheme where model prediction is regularized by the latest checkpoint with increasing sparsity throughout pruning. Our experiments on natural language understanding, question answering, named entity recognition, and datato-text generation with various Transformerbased PLMs show the effectiveness of the approach at various sparsity levels.",
+                  link: "https://github.com/DRSY/PINS",
+                  code: "https://github.com/DRSY/PINS",
+                  data: "",
+                  cite: "Siyu Ren and Kenny Q. Zhu. Pruning Pre-trained Language Models with Principled Importance and Self-regularization. In the Findings of <i>ACL 2023</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning",
+                  abs: "Pretrained masked language models (PLMs) were shown to be inheriting a considerable amount of relational knowledge from the source corpora. In this paper, we present an in-depth and comprehensive study concerning specializing PLMs into relational models from the perspective of network pruning. We show that it is possible to find subnetworks capable of representing grounded commonsense relations at non-trivial sparsity while being more generalizable than original PLMs in scenarios requiring knowledge of single or multiple commonsense relations.",
+                  link: "",
+                  code: "https://github.com/DRSY/LAMP",
+                  data: "https://github.com/DRSY/LAMP",
+                  cite: "Siyu Ren and Kenny Q. Zhu. Specializing Pre-trained Language Models for Better Relational Reasoning via Network Pruning. In the Proceedings of <i>Findings of NAACL 2022</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval",
+                  abs: "Current text-image approaches (e.g., CLIP) typically adopt dual-encoder architecture us- ing pre-trained vision-language representation. However, these models still pose non-trivial memory requirements and substantial incremental indexing time, which makes them less practical on mobile devices. In this paper, we present an effective two-stage framework to compress large pre-trained dual-encoder for lightweight text-image retrieval. The resulting model is smaller (39% of the original), faster (1.6x/2.9x for processing image/text respectively), yet performs on par with or better than the original full model on Flickr30K and MSCOCO benchmarks. We also open-source an accompanying realistic mobile image search application.",
+                  link: "https://arxiv.org/abs/2204.13913",
+                  code: "https://github.com/DRSY/MoTIS",
+                  data: "https://github.com/DRSY/MoTIS",
+                  cite: "Siyu Ren and Kenny Q. Zhu. Leaner and Faster: Two-Stage Model Compression for Lightweight Text-Image Retrieval. In the Proceedings of <i>NAACL 2022</i>.",
+                },
+              ];
+              for (i = 0; i < ProjList.length; i++) {
+                paper = ProjList[i];
+                document.write("<p>");
+                document.write(
+                  '<a href="' +
+                    paper.web +
+                    '"><h5>' +
+                    paper.title +
+                    "</h5></a>",
+                );
+                document.write('<a href="' + paper.link + '">[paper]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write('<a href="' + paper.code + '">[code]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write(
+                  '<a href="' + paper.data + '">[data]</a><br><br>',
+                );
+                // document.write('<nobr>')
+                document.write(
+                  '<span name="box" class="many-txt"> ' +
+                    "<b>Abstract</b>: " +
+                    paper.abs +
+                    "</span>" +
+                    '<a name="button">Show All</a><br><br>',
+                );
+                // document.write()
+                // document.write('</nobr>')
+                // document.write('<button type="button">Show All</button><br>')
+                document.write("<b>Cite</b>: " + paper.cite + "<br>");
+                document.write("<hr>");
+              }
+            </script>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h4 id="pp">Previous Projects</h4>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <script>
+              ProjList = [
+                {
+                  web: "project_causal.html",
+                  title: "CausalNet: Causality Extraction and Reasoning",
+                  abs: "Causality can help for human reasoning and decision making. We extract casuality(cause-effect pairs) from web corpus and build a web-scale causality network (CausalNet). Backed by this network, we propose a framework for commonsense causal reasoning.",
+                  link: "http://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-copa.pdf",
+                  code: "https://github.com/cs-zyluo/CausalNet",
+                  data: "https://adapt.seiee.sjtu.edu.cn/causal/",
+                  cite: 'Zhiyi Luo, Yuchen Sha, Kenny Q. Zhu, Seung-won Hwang, Zhongyuan Wang, "Commonsense Causal Reasoning between Short Texts", Proc. of 15th Int. Conf. on Principles of Knowledge Representation and Reasonging (KR\'2016), Cape Town, South Africa.',
+                },
+                {
+                  web: "https://shanshan437421.github.io/",
+                  title:
+                    "Enhanced Story Representation by ConceptNet for Predicting Story Endings",
+                  abs: "Predicting endings for narrative stories is a grand challenge for machine commonsense reasoning. The task requires accurate representation of the story semantics and structured logic knowledge. Pre-trained language models, such as BERT, made progress recently in this task by exploiting spurious statistical patterns in the test dataset, instead of “understanding” the stories per se. In this paper, we propose to improve the representation of stories by first simplifying the sentences to some key concepts and second modeling the latent relationship between the key ideas within the story. Such enhanced sentence representation, when used with pre-trained language models, makes substantial gains in prediction accuracy on the popular Story Cloze Test without utilizing the biased validation data.",
+                  link: "https://github.com/shanshan437421/Simplification/blob/master/paper.pdf",
+                  code: "https://github.com/shanshan437421/Simplification",
+                  data: "",
+                  cite: "Shanshan Huang, Kenny Q. Zhu*, Qianzi Liao, Libin Shen and Yinggong Zhao. Enhanced Story Representation by ConceptNet for Predicting Story Endings. the Proceedings of <i>CIKM 2020.</i>",
+                },
+                {
+                  web: "https://github.com/blmoistawinde/dgcn_tagging",
+                  title:
+                    "Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging",
+                  abs: "Audio tagging aims at predicting sound events occurred in a recording. Traditional models require enormous laborious annotations, otherwise performance degeneration will be the norm. Therefore, we investigate robust audio tagging models in low-resource scenarios with the enhancement of knowledge graphs. Besides existing ontological knowledge, we further propose a semi-automatic approach that can construct temporal knowledge graphs on diverse domain-specific label sets. Moreover, we leverage a variant of relation-aware graph neural network, D-GCN, to combine the strength of the two knowledge types. Experiments on AudioSet and SONYC urban sound tagging datasets suggest the effectiveness of the introduced temporal knowledge, and the advantage of the combined KGs with D-GCN over single knowledge source.",
+                  link: "https://arxiv.org/abs/2110.01009",
+                  code: "https://github.com/blmoistawinde/dgcn_tagging",
+                  data: "https://github.com/blmoistawinde/dgcn_tagging",
+                  cite: "Zhiling Zhang, Zelin Zhou, Haifeng Tang, Guangwei Li, Mengyue Wu*, Kenny Q Zhu*. Enriching Ontology with Temporal Commonsense for Low-Resource Audio Tagging. the Proceedings of <i>CIKM 2021.</i>",
+                },
+                {
+                  web: "https://yizhuliu.github.io/Welcome/",
+                  title:
+                    "Controlling Length in Abstractive Summarization Using a Convolutional Neural Network",
+                  abs: "Convolutional neural networks (CNNs) have met great success in abstractive summarization, but they cannot effectively generate summaries of desired lengths. Because generated summaries are used in difference scenarios which may have space or length constraints, the ability to control the summary length in abstractive summarization is an important problem. In this paper, we propose an approach to constrain the summary length by extending a convolutional sequence to sequence model. The results show that this approach generates high-quality summaries with user defined length, and outperforms the baselines consistently in terms of ROUGE score, length variations and semantic similarity.",
+                  link: "https://www.aclweb.org/anthology/D18-1444/",
+                  code: "https://github.com/YizhuLiu/sumlen",
+                  data: "https://drive.google.com/file/d/1KjzKYhpsIwBKiNZx5x-NiYQabumY3qkY/view",
+                  cite: "Yizhu Liu and Zhiyi Luo and Kenny Q. Zhu. Controlling Length in Abstractive Summarization Using a Convolutional Neural Network. In the Proceedings of <i>EMNLP 2018</i>",
+                },
+                {
+                  web: "https://github.com/blmoistawinde/KPCNet",
+                  title:
+                    "Diverse and Specific Clarification Question Generation with Keywords",
+                  abs: "Product descriptions on e-commerce websites often suffer from missing important aspects. Clarification question generation (CQGen) can be a promising approach to help alleviate the problem. Unlike traditional QGen assuming the existence of answers in the context and generating questions accordingly, CQGen mimics user behaviors of asking for unstated information. The generated CQs can serve as a sanity check or proofreading to help e-commerce merchant to identify potential missing information before advertising their product, and improve consumer experience consequently. Due to the variety of possible user backgrounds and use cases, the information need can be quite diverse but also specific to a detailed topic, while previous works assume generating one CQ per context and the results tend to be generic. We thus propose the task of Diverse CQGen and also tackle the challenge of specificity.We propose a new model named KPCNet, which generates CQs with Keyword Prediction and Conditioning, to deal with the tasks. Automatic and human evaluation on 2 datasets (Home & Kitchen, Office) showed that KPCNet can generate more specific questions and promote better group-level diversity than several competing baselines.",
+                  link: "https://github.com/blmoistawinde/KPCNet/blob/main/paper.pdf",
+                  code: "https://github.com/blmoistawinde/KPCNet",
+                  data: "https://zenodo.org/record/4587504",
+                  cite: "Zhiling Zhang and Kenny Q. Zhu. Diverse and Specific Clarification Question Generation with Keywords. In Proceedings of <i>The Web Conference</i> 2021 (WWW '21)",
+                },
+                {
+                  web: "https://github.com/Karlguo/paraphrase",
+                  title:
+                    "Automatic Paraphrasing via Sentence Reconstruction and Round-trip Translation",
+                  abs: "Paraphrase generation plays key roles in NLP tasks such as question answering, machine translation, and information retrieval. In this paper, we propose a novel framework for paraphrase generation. It simultaneously decodes the output sentence using a pretrained wordset-to-sequence model and a round-trip translation model. We evaluate this framework on Quora, WikiAnswers, MSCOCO and Twitter, and show its advantage over previous state-of-the-art unsupervised methods and distantly-supervised methods by significant margins on all datasets. For Quora and WikiAnswers, our framework even performs better than some strongly supervised methods with domain adaptation. Further, we show that the generated paraphrases can be used to augment the training data for machine translation to achieve substantial improvements.",
+                  link: "https://github.com/Karlguo/paraphrase/blob/main/Paraphrase_IJCAI_.pdf",
+                  code: "https://github.com/Karlguo/paraphrase",
+                  data: "https://github.com/Karlguo/paraphrase/tree/main/data",
+                  cite: "Zilu Guo, Zhongqiang Huang, Kenny Zhu, Guandan Chen, Kaibo Zhang, Boxing Chen and Fei Huang Automatic Paraphrasing via Sentence Reconstruction and Round-trip Translation. In Proceedings of <i>IJCAI 2021</i>",
+                },
+                {
+                  web: "https://yizhuliu.github.io/Welcome/",
+                  title:
+                    "Keyword-aware Abstractive Summarization by Extracting Set-level Intermediate Summaries",
+                  abs: "Abstractive summarization is useful in providing a summary or a digest of news or other web texts and enhancing users reading experience, especially when they are reading on small displays such as mobile phones. However, existing encoder-decoder summarization models have difficulty learning the latent alignment between source documents and summaries because of their vast disparity in length. In this paper, we propose a extractor-abstractor framework in which the keyword-based extractor selects a few sets of salient sentences from the input document and then the abstractor paraphrases these sets of sentences in parallel, which are more aligned to the summary, to generate the final summary. The new extractor and abstractor are pretrained from a set of ``pseudo summaries'' extracted by specially designed heuristics, and then further trained together in a reinforcement learning framework. The results show that the proposed model generates high-quality summaries with faster training speed and less training memory footprint, and outperforms the state-of-the-art models on CNN/Daily Mail, Webis-TLDR-17, Webis-Snippet-20, WikiHow and DUC-2002 datasets.",
+                  link: "https://github.com/YizhuLiu/SetKE_ABS/main.pdf",
+                  code: "https://github.com/YizhuLiu/SetKE_ABS/code",
+                  data: "https://github.com/YizhuLiu/SetKE_ABS/data",
+                  cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Keyword-aware Abstractive Summarization by Extracting Set-level Intermediate Summaries. In Proceedings of <i>The Web Conference</i> 2021 (WWW '2021)",
+                },
+                {
+                  web: "https://yizhuliu.github.io/Welcome/",
+                  title:
+                    "Reducing Repetition in Convolutional Abstractive Summarization",
+                  abs: "Convolutional sequence to sequence (CNN seq2seq) models have met success in abstractive summarization. However, their outputs often contain repetitive word sequences and logical inconsistencies, limiting the practicality of their application. In this paper, we find the reasons behind the repetition problem in CNN-based abstractive summarization through observing the attention map between the summaries with repetition and their corresponding source documents and mitigate the repetition problem. We propose to reduce the repetition in summaries by attention filter mechanism (ATTF) and sentence-level backtracking decoder (SBD), which dynamically redistributes attention over the input sequence as the output sentences are generated. The ATTF can record previously attended locations in the source document directly and prevent the decoder from attending to these locations. The SBD prevents the decoder from generating similar sentences more than once via backtracking at test. The proposed model outperforms the baselines in terms of ROUGE score, repeatedness, and readability. The results show that this approach generates high-quality summaries with minimal repetition and makes the reading experience better.",
+                  link: "https://www.cambridge.org/core/journals/natural-language-engineering/article/abs/reducing-repetition-in-convolutional-abstractive-summarization/2247BFF85CEFD40C1189B05CD6E9BE85",
+                  code: "https://github.com/YizhuLiu/sumrep",
+                  data: "https://github.com/YizhuLiu/sumrep",
+                  cite: "Yizhu Liu, Xinyue Chen, Xusheng Luo and Kenny Q. Zhu. Reducing Repetition in Convoluaiton Abstractive Summarization. <i>Natural Language Engineering</i> 2021",
+                },
+                {
+                  web: "https://yizhuliu.github.io/Welcome/",
+                  title:
+                    "Length Control in Abstractive Summarization by Pretraining Information Selection",
+                  abs: "Previous length-controllable summarization models mostly control lengths at the decoding stage, whereas the encoding or the selection of information from the source document is not sensitive to the designed length. They also tend to generate summaries as long as those in the training data. In this paper, we propose a length-aware attention mechanism (LAAM) to adapt the encoding of the source based on the desired length. Our approach works by training LAAM on a summary length balanced dataset built from the original training data, and then fine-tuning as usual. Results show that this approach is effective in generating high-quality summaries with desired lengths and even those short lengths never seen in the original training set.",
+                  link: "https://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-lencon22.pdf",
+                  code: "https://github.com/YizhuLiu/lengthcontrol",
+                  data: "https://github.com/YizhuLiu/lengthcontrol",
+                  cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Length Control in Abstractive Summarization by Pretraining Information Selection. In Proceedings of <i>ACL 2022</i>",
+                },
+                {
+                  web: "https://yizhuliu.github.io/Welcome/",
+                  title:
+                    "Reference-free Summarization Evaluation via Semantic Correlation and Compression Ratio",
+                  abs: "A document can be summarized in a number of ways. Reference-based evaluation of summarization has been criticized for its inflexibility. In this paper, we propose a new automatic reference-free evaluation metric that compares semantic distribution between source document and summary by pretrained language models and considers summary compression ratio. The experiments show that this metric is more consistent with human evaluation in terms of coherence, consistency, relevance, fluency.",
+                  link: "https://github.com/YizhuLiu/summeval/blob/main/paper.pdf",
+                  code: "https://github.com/YizhuLiu/summeval",
+                  data: "https://github.com/YizhuLiu/summeval",
+                  cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Reference-free Summarization Evaluation via Semantic Correlation and Compression Ratio. In Proceedings of <i>NAACL 2022</i>",
+                },
+                {
+                  web: "https://yizhuliu.github.io/Welcome/",
+                  title:
+                    "Opinion Summarization by Weak-Supervision from Mix-structured Data",
+                  abs: "Opinion summarization of multiple reviews suffers from the lack of reference summaries for training. Most previous approaches construct multiple reviews and their summary based on textual similarities between reviews, resulting in information mismatch between the review input and the summary. In this paper, we convert each review into a mix of structured and unstructured data, which we call opinionaspect pairs (OAs) and implicit sentences (ISs). We propose a new method to synthesize training pairs of such mix-structured data as input and the textual summary as output, and design a summarization model with OA encoder and IS encoder. Experiments show that our approach outperforms previous methods on Yelp, Amazon and RottenTomatos datasets.",
+                  link: "https://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-opsum22.pdf",
+                  code: "https://github.com/YizhuLiu/Opinion-Summarization",
+                  data: "https://github.com/YizhuLiu/Opinion-Summarization",
+                  cite: "Yizhu Liu, Qi Jia and Kenny Q. Zhu. Opinion Summarization by Weak-Supervision from Mix-structured Data. In Proceedings of <i>EMNLP 2022</i>",
+                },
+                {
+                  web: "",
+                  title:
+                    "Matching Questions and Answers in Online Forum Dialogues",
+                  abs: "Matching question-answer relations between two turns in conversations is not only the first step in analyzing dialogue structures, but also valuable for training dialogue systems. This paper presents a QA matching model considering both distance information and dialogue history by two simultaneous attention mechanisms called mutual attention. Given scores computed by the trained model between each non-question turn with its candidate questions, a greedy matching strategy is used for final predictions. Because existing dialogue datasets such as the Ubuntu dataset are not suitable for the QA matching task, we further create a dataset with 1,000 labeled dialogues and demonstrate that our proposed model outperforms the state-of-the-art and other strong baselines, particularly for matching long-distance QA pairs. ",
+                  link: "http://ebooks.iospress.nl/publication/55121",
+                  code: "https://github.com/JiaQiSJTU/QAmatching",
+                  data: "https://drive.google.com/file/d/1W6lTjThARhk1a4i6m95ySX4M7HWsfeHy/view?usp=sharing",
+                  cite: "Qi Jia, Mengxue Zhang, Shengyao Zhang and Kenny Q. Zhu. Matching Questions and Answers in Dialogues from Online Forums. In the Proceedings of <i>ECAI 2020</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Multi-turn Response Selection using Dialogue Dependency Relations",
+                  abs: "Multi-turn response selection is a task designed for developing dialogue agents. The performance on this task has a remarkable improvement with pre-trained language models. However, these models simply concatenate the turns in dialogue history as the input and largely ignore the dependencies between the turns. In this paper, we propose a dialogue extraction algorithm to transform a dialogue history into threads based on their dependency relations. Each thread can be regarded as a self-contained sub-dialogue. We also propose Thread-Encoder model to encode threads and candidates into compact representations by pre-trained Transformers and finally get the matching score through an attention layer. The experiments show that dependency relations are helpful for dialogue context understanding, and our model outperforms the state-of-the-art baselines on both DSTC7 and DSTC8*, with competitive results on UbuntuV2.",
+                  link: "https://www.aclweb.org/anthology/2020.emnlp-main.150/",
+                  code: "https://github.com/JiaQiSJTU/ResponseSelection",
+                  data: "",
+                  cite: "Qi Jia, Yizhu Liu, Siyu Ren, Kenny Q. Zhu and Haifeng Tang. Multi-turn Response Selection using Dialogue Dependency Relations. In the Proceedings of <i>EMNLP 2020</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "DDRel: A New Dataset for Interpersonal Relation Classification in Dyadic Dialogues",
+                  abs: "Interpersonal language style shifting in dialogues is an interesting and almost instinctive ability of human. Understanding interpersonal relationship from language content is also a crucial step toward further understanding dialogues. Previous work mainly focuses on relation extraction between named entities in texts or within a single dialogue session. In this paper, we propose the task of relation classification of interlocutors based on their dialogues. We crawled movie scripts from IMSDb, and annotated the relation labels for each session according to 13 pre-defined relationships. The annotated dataset DDRel consists of 6300 dyadic dialogue sessions between 694 pair of speakers with 53,126 utterances in total. We also construct session-level and pair-level relation classification tasks with widely-accepted baselines. The experimental results show that this task is challenging for existing models and the dataset will be useful for future research.",
+                  link: "https://arxiv.org/abs/2012.02553",
+                  code: "https://github.com/JiaQiSJTU/DialogueRelationClassification",
+                  data: "https://adapt.seiee.sjtu.edu.cn/~angel/ddrel.zip",
+                  cite: "Qi Jia, Hongru Huangand Kenny Q. Zhu. DDRel: A New Dataset for Interpersonal Relation Classification in Dyadic Dialogues. In the Proceedings of <i>AAAI 2021</i>.",
+                },
+                {
+                  web: "project_qa.html",
+                  title:
+                    "Knowledge Base Question Answering via Encoding of Complex Query Graphs",
+                  abs: "Answering complex questions that involve multiple entities and multiple relations using a standard knowledge base is an open and challenging task. Most existing KBQA approaches focus on simpler questions and do not work very well on complex questions because they were not able to simultaneously represent the question and the corresponding complex query structure. In this work, we encode such complex query structure into a uniform vector representation, and thus successfully capture the interactions between individual semantic components within a complex question. This approach consistently outperforms existing methods on complex questions while staying competitive on simple questions.",
+                  link: "https://www.aclweb.org/anthology/D18-1242/",
+                  code: "https://github.com/lkq1992yeah/CompQA",
+                  data: "https://github.com/lkq1992yeah/CompQA",
+                  cite: "Kangqi Luo, Fengli Lin, Xusheng Luo, Kenny Zhu. Knowledge Base Question Answering via Encoding of Complex Query Graphs. In the Proceedings of <i>EMNLP 2018</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Post-Training Dialogue Summarization using Pseudo-Paraphrasing",
+                  abs: "Previous dialogue summarization techniques adapt large language models pretrained on the narrative text by injecting dialogue-specific features into the models. These features either require additional knowledge to recognize or make the resulting models harder to tune. To bridge the format gap between dialogues and narrative summaries in dialogue summarization tasks, we propose to post-train pretrained language models (PLMs) to rephrase from dialogue to narratives. After that, the model is fine-tuned for dialogue summarization as usual. Comprehensive experiments show that our approach significantly improves vanilla PLMs on dialogue summarization and outperforms other SOTA models by the summary quality and implementation costs.",
+                  link: "https://arxiv.org/abs/2204.13498",
+                  code: "https://github.com/JiaQiSJTU/DialSent-PGG",
+                  data: "https://drive.google.com/file/d/1z0pGh7sbUp27HLhhfwWQt-Pd6iarLom2/view?usp=sharing",
+                  cite: "Qi Jia, Yizhu Liu, Haifeng Tang and Kenny Q. Zhu. Post-Training Dialogue Summarization using Pseudo-Paraphrasing. In the Proceedings of Findings of <i>NAACL 2022</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "ChatMatch: Evaluating Chatbots by Autonomous Chat Tournaments",
+                  abs: "Existing automatic evaluation systems of chatbots mostly rely on static chat scripts as ground truth, which is hard to obtain, and requires access to the models of the bots as a form of “white-box testing”. Interactive evaluation mitigates this problem but requires human involvement. In our work, we propose an interactive chatbot evaluation framework in which chatbots compete with each other like in a sports tournament, using ﬂexible scoring metrics. This framework can efﬁciently rank chatbots independently from their model architectures and the domains for which they are trained.",
+                  link: "https://aclanthology.org/2022.acl-long.522.pdf",
+                  code: "https://github.com/ruolanyang/ChatMatch",
+                  data: "https://github.com/ruolanyang/ChatMatch",
+                  cite: "Ruolan Yang, Zitong Li, Haifeng Tang and Kenny Q. Zhu. ChatMatch: Evaluating Chatbots by Autonomous Chat Tournaments. In Proceedings of <i>ACL 2022</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data",
+                  abs: "Few-shot relation classification seeks to classify incoming query instances after meeting only few support instances.This ability is gained by training with large amount of in-domain annotated data. In this paper, we tackle an even harder problem by further limiting the amount of data available at training time. We propose a few-shot learning framework for relation classification, which is particularly powerful when the training data is very small. In this framework, models not only strive to classify query instances, but also seek underlying knowledge about the support instances to obtain better instance representations. The framework also includes a method for aggregating cross-domain knowledge into models by open-source task enrichment. Additionally, we construct a brand new dataset: the TinyRel-CM dataset, a few-shot relation classification dataset in health domain with purposely small training data and challenging relation classes. Experimental results demonstrate that our framework brings performance gains for most underlying classification models, outperforms the state-of-the-art results given small training data, and achieves competitive results with sufficiently large training data.",
+                  link: "http://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-mick.pdf",
+                  code: "https://github.com/XiaoqingGeng/MICK",
+                  data: "https://github.com/XiaoqingGeng/MICK/tree/master/data",
+                  cite: "Xiaoqing Geng, Xiwen Chen and Kenny Q. Zhu. MICK: A Meta-Learning Framework for Few-shot Relation Classification with Small Training Data. In the Proceedings of <i>CIKM 2020</i>.",
+                },
+                {
+                  web: "",
+                  title:
+                    "Knowledge-Driven Distractor Generation for Cloze-style Multiple Choice Questions",
+                  abs: "In this paper, we propose a novel configurable framework to automatically generate distractive choices for open-domain cloze-style multiple-choice questions. The framework incorporates a general-purpose knowledge base to effectively create a small distractor candidate set, and a feature-rich learning-to-rank model to select distractors that are both plausible and reliable. Experimental results on a new dataset across four domains show that our framework yields distractors outperforming previous methods both by automatic and human evaluation. The dataset can also be used as a benchmark for distractor generation research in the future.",
+                  link: "https://arxiv.org/abs/2004.09853",
+                  code: "https://github.com/DRSY/DGen",
+                  data: "https://github.com/DRSY/DGen",
+                  cite: "Siyu Ren and Kenny Q. Zhu. Knowledge-Driven Distractor Generation for Cloze-style Multiple Choice Questions. In the Proceedings of <i>AAAI 2021</i>.",
+                },
+                {
+                  web: "http://202.120.38.146:9751/",
+                  title: "Automatic Illustration for Children's Storybook",
+                  abs: "Illustration plays a vital role in children's reading process. An appropriate illustration could add both interest and convenience to reading.However, it takes too much work and time to generate illustrations by man. So in this project we propose an automatic illustration model based on image retrieval which can output several illustrations with a consistent style with texts as input. Our model consists of four parts: NER, web crawler, object detection and style transfer. For demonstration we designed a web demo online on which we can simply input stories and get illustrations of a selected style efficiently.",
+                  link: "",
+                  code: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
+                  data: "https://github.com/SuperTou4a/Illustration_Retrieval_Web_Demo",
+                  cite: "",
+                },
+                {
+                  web: "",
+                  title:
+                    "Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation",
+                  abs: "News recommendation for anonymous readers is a useful but challenging task for many news portals, where interactions between readers and articles are limited within a temporary login session. Previous works tend to formulate session-based recommendation as a next item prediction task, while they neglect the implicit feedback from user behaviors, which indicates what users really like or dislike. Hence, we propose a comprehensive framework to model user behaviors through positive feedback (i.e., the articles they spend more time on) and negative feedback (i.e., the articles they choose to skip without clicking in). Moreover, the framework implicitly models the user using their session start time, and the article using its initial publishing time, in what we call neutral feedback. Empirical evaluation on three real-world news datasets shows the framework's promising performance of more accurate, diverse and even unexpectedness recommendations than other state-of-the-art session-based recommendation approaches.",
+                  link: "",
+                  code: "https://github.com/summmeer/session-based-news-recommendation",
+                  data: "https://github.com/summmeer/session-based-news-recommendation",
+                  cite: "Shansan Gong and Kenny Q. Zhu. Positive, Negative and Neutral: Modeling Implicit Feedback in Session-based News Recommendation. In <i>Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval. 2022</i>.",
+                },
+              ];
+
+              for (i = 0; i < ProjList.length; i++) {
+                paper = ProjList[i];
+                document.write("<p>");
+                document.write(
+                  '<a href="' +
+                    paper.web +
+                    '"><h5>' +
+                    paper.title +
+                    "</h5></a>",
+                );
+                document.write('<a href="' + paper.link + '">[paper]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write('<a href="' + paper.code + '">[code]</a>');
+                document.write("&nbsp;&nbsp;");
+                document.write(
+                  '<a href="' + paper.data + '">[data]</a><br><br>',
+                );
+                // document.write('<nobr>')
+                document.write(
+                  '<span name="box" class="many-txt"> ' +
+                    "<b>Abstract</b>: " +
+                    paper.abs +
+                    "</span>" +
+                    '<a name="button">Show All</a><br><br>',
+                );
+                // document.write()
+                // document.write('</nobr>')
+                // document.write('<button type="button">Show All</button><br>')
+                document.write("<b>Cite</b>: " + paper.cite + "<br>");
+                document.write("<hr>");
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        let buttons = document.getElementsByName("button");
+
+        // let p = document.getElementById("box");
+        // alert(p)
+        for (var i = 0; i < buttons.length; i++) {
+          button = buttons[i];
+          let p = document.getElementsByName("box")[i];
+          // p = pp[i];
+          // var str = document.getElementsByName("box")[i].innerHTML;
+          var onOff = true;
+          button.onclick = function () {
+            // if(onOff){
+            //   p.innerHTML = p.innerHTML.substr(0,50)+'...';
+            //   this.innerHTML='Show All'
+            // }else{
+            //   p.innerHTML = p.innerHTML;
+            //   this.innerHTML='Hide'
+            // }
+            // onOff = !onOff;
+            // return true;
+
+            if (this.innerHTML == "Show All") {
+              p.classList.remove("many-txt");
+              p.classList.add("all-txt");
+              this.innerHTML = "Hide";
+            } else {
+              p.classList.remove("all-txt");
+              p.classList.add("many-txt");
+              this.innerHTML = "Show All";
+            }
+          };
+        }
+      </script>
+      <!--#include file="_footer.html" -->
+    </div>
+  </body>
 </html>
